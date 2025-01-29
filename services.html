@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>A-Gardens Cambridge</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="mainStyles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<script src="https://kit.fontawesome.com/e8ada9ffa6.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="jquery-3.7.0.min.js"></script>		<!--			-->
+		
+		<script> 		//Button ID:		all		gardenCare		fenceManagement		shadeCare			wasteDisposal
+		
+			$(document).ready(function(){  		
+				$("#gardenCared").click(function()		{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
+															$("#gardenCared").addClass("activeGalleryFilter");
+															$(".imageContainer").hide().fadeOut(50)	;			
+															$(".gardenCare").show().animate({scale: '0.0'}, "fast");			//	$(".gardenCare,  .fenceManagement, .shadeCare").hide().fadeOut(50);	;		
+															$(".gardenCare").animate({scale: '1'}, "medium");					//	$(".gardenCare").show().fadeIn(100);	;																
+														});										
+				$("#manageFence").click(function()		{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
+															$("#manageFence").addClass("activeGalleryFilter");
+															$(".imageContainer").hide().fadeOut(50)	;			
+															$(".manageFence").show().animate({scale: '0.0'}, "fast");		
+															$(".manageFence").animate({scale: '1'}, "medium");				
+														});										
+				$("#shadeCare").click(function()		{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
+															$("#shadeCare").addClass("activeGalleryFilter");
+															$(".imageContainer").hide().fadeOut(50)	;			
+															$(".shadeCare").show().animate({scale: '0.0'}, "fast");		
+															$(".shadeCare").animate({scale: '1'}, "medium");
+														});										
+				$("#wasteDisposed").click(function()	{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
+															$("#wasteDisposed").addClass("activeGalleryFilter");
+															$(".imageContainer").hide().fadeOut(50)	;			
+															$(".wasteDisposal").show().animate({scale: '0.0'}, "fast");		
+															$(".wasteDisposal").animate({scale: '1'}, "medium");
+														});										
+				$("#all").click(function()				{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
+															$("#all").addClass("activeGalleryFilter");
+															$(".imageContainer").hide().fadeOut(50)	;			
+															$(".imageContainer").show().animate({scale: '0.0'}, "fast");		
+															$(".imageContainer").animate({scale: '1'}, "medium");
+														});										
+					
+			}); 
+		
+		</script> 
+
+	</head>
+	<body>
+
+		<div class="menuBarDiv">
+			<div class="menuBarMenusDiv">
+				<div class="menuBarLogoDiv">	<img src="downloads/AGardensInvoiceLogoSmall.jpg" class=" 	">		
+				</div>
+				
+				<div class="menuBarLinksDiv">	
+						<nav class = "headerNav" >
+							<a href="index.html">	Home		</a>
+							<a  href="aboutUs.html">	About Us	</a>
+							<a class = "activeMenu"  href="#Services">	Services 	</a>
+							<a href="gallery.html">	Gallery 	</a>
+							<a href="contactUs.html">	Contact Us	</a>
+						</nav> 					
+				</div>
+				
+				<div class="menuBarContactDiv">		
+					<div class = 'aboutMeInforContentSM'> 
+						<p  style = " color: white ; font-size: 1.2rem;  padding: 2px; margin: 0px; text-align: center;  "   > <b> Get in Touch  </b> </p>
+								
+						<div class="socialMedia">	
+							<div class="tooltip">	
+								<img src="downloads/sm-tiktok-whiteBG.png"  /> 
+								<span class="tooltiptext"> <a class = "smLinks" href="https://www.tiktok.com/@samsonkhadzeehmen" target="_blank">	Tiktok	</a>  </span>  
+							</div>
+							<div class="tooltip">	
+								<img src="downloads/sm-ig-original.jpg"/>  
+								<span class="tooltiptext">   <a  class = "smLinks"  href="https://www.instagram.com/" target="_blank"> instagram </a> </span> 
+							</div>
+							<div class="tooltip">	
+								<img src="downloads/sm-facebook.png"  />   
+								<span class="tooltiptext"> <a   class = "smLinks" href="https://www.facebook.com/profile.php?id=61556980501020&mibextid=2Xzr3SNpE5dFVwDb" target="_blank">  facebook  </a>  </span>  
+							</div>
+						</div>			
+					</div>
+						
+				</div>
+			</div>
+			
+			<div class="pageTitleDiv">
+				<h2 class ="pageTitleHeader" > Our Services </h2> 
+				<p  class ="pageTitleParagraph">  Home/ Services </p> 			  
+			</div>
+
+		</div>
+		
+		<div class="pageContentDiv">
+			
+			<div id = "aboutUsDiv" > 
+				<div id = "aboutUsCaptionDiv" > 
+					<p  id = "aboutUsCaptionP"  class="aboutUsCaption">  <span> <b> 10+ </b> Years <br/> of Experience  </span> 	</P>
+					<img  src="downloads/slabs.jpg" class="aboutUsCaption"  id = "aboutUsCaption1">
+					<img src="downloads/AfterAsroTurfInstalation.jpg" class="aboutUsCaption"  id = "aboutUsCaption2">	
+						
+					
+				</div>
+				
+				<div id = "aboutUsContentDiv" >
+					<h2 id = "aboutUsHeaderSmall">		<img src="downloads/leaf1.png" class=" 	">	<span>  About Us	  </span>  	</h2> 
+					<H2 id = "aboutUsHeaderBig">  <b> Garden landscaping </b> Services for every need  							</h2>	
+					<p   id = "aboutUsParagraph"> We pledge to transform your landscaping dreams into reality, crafting beautiful, tranquil outdoor spaces that reflect your vision and 
+						enhance your lifestyle.  <br/>   Let us grow beauty and joy in every garden.
+						<ul> 
+							<li>	We Are Experienced at Gardening	and landscaping	</li>
+							<li>	We Adapt To Your Need 			</li>
+							<li>	We are fully Licensed and Insured  			</li>
+						</ul>
+					</p>
+					<div id = "aboutUsCEODiv" >		
+						<div id = "aboutUsCEO" >		 
+							<div id = "aboutUsCEOCaption" >	<img src="downloads/randyPPSmall.jpg" class=" 	">	</div>
+							<div id = "aboutUsCEOName" >		
+										<h3> Randy Kalume 	</h3> 
+										<p> CEO and Founder </p> 
+							</div>
+						</div> 
+						<div id = "aboutUsGetInTouch" >	
+							<div class = 'aboutMeInforContentSM'> 
+								<p  style = " color: green ; font-size: 1.2rem;  padding: 2px; margin: 0px; text-align: center;  "   > <b> Get in Touch  </b> </p>
+										
+								<div class="socialMedia1">	
+									<div class="tooltip">	<img src="downloads/sm-tiktok-whiteBG.png"  />  <span class="tooltiptext">  Tik Tok </span>  </div>
+									<div class="tooltip">	<img src="downloads/sm-ig-original.jpg"/>   <span class="tooltiptext">  instagram </span>  </div>
+									<div class="tooltip">	<img src="downloads/sm-facebook.png"  />   <span class="tooltiptext">  facebook </span>  </div>
+								</div>
+									
+							</div>
+							
+
+						</div> 
+					</div> 
+					
+				</div>
+			
+			</div>
+		
+			<div id = "servicesDiv" > 
+				<div id = "servicesHeaderDiv" > 
+					<div id = "servicesHeader" >  
+						<h2 id = "servicesHeaderSmall">		<img src="downloads/leaf1.png" class=" 	">	<span>  Services	  </span>  	</h2> 
+						<H2 id = "servicesHeaderBig">  <b> Garden landscaping </b> Services for every need  							</h2>
+					
+					</div> 
+					<div id = "servicesParagraph" >   
+						<p>		Enhance your outdoor space with our professional garden landscaping services, 
+								customized to suit every need and preference. From design to installation,
+								we create beautiful, functional gardens that reflect your style.	
+						</p> 				
+					</div> 
+				</div>
+				<div id = "servicesContentDiv" > <!--	Garden Management, Fence Management, Waste Disposal, Shade Management	-->
+					<div class = "servicesContent" id = "gardenCare"> 	 	
+						<img src="downloads/flower.jpg" class=" 	">	
+						<h2 class = "servicesContentHeading"> Garden Care  </h2> 					
+						<div class = "servicesContentBody" > We offer exquisite and quality gardening services including: 
+							plant maintenance, ground management, prunning, weeding, pest & fungi control, clearing debris or leaves, 
+							to ensure that the garden is beautiful and also to prevent serious problems from developing.
+							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
+						</div>
+						
+					</div> 
+					
+					<div class = "servicesContent" id = "fenceManagement"> 		
+						<img src="downloads/HotelCarPark1.jpg" class=" 	">	
+						<h2 class = "servicesContentHeading"> Fence Management  </h2> 					
+						<div class = "servicesContentBody" > We design, install and manage a wide variety of functional, durable and 
+							stylish fence including: chain-link, picket fence, fence panels, fence posts and rail.
+							we also install, irrigate, trim and manage live fences whether it be of climbing plants, evergreens, 
+							shrubs, hedges or other tree variety.	
+							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
+						</div>
+					</div> 
+					
+					<div class = "servicesContent" id = "shadeManagement"> 	
+						<img src="downloads/shadeInstall1.jpg" class=" 	">	
+						<h2 class = "servicesContentHeading"> Shade Management  </h2> 					
+						<div class = "servicesContentBody" >	We design and build shade to suite the clients needs. 
+							We can also remove and dispose worn-out, delapidated or unused shades.
+							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
+						</div>
+					</div> 
+					
+					<div class = "servicesContent" id = "landscapping"> 	
+						<img src="downloads/slabs3.jpg" class=" 	">	
+						<h2 class = "servicesContentHeading"> Landscapping  </h2> 					
+						<div class = "servicesContentBody" >	Our landscaping involves designing and arranging the outdoor areas of a property or building
+							including plants [trees or flowers] selection, yard maintenance and upkeep, 
+							installation of water features and stone or other hardscaping elements like walkways, patios, retaining walls. 	
+							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>
+						
+						</div>
+					</div>
+
+					<div class = "servicesContent" id = "parkCare"> 	 	
+						<img src="downloads/AfterAsroTurfInstalation.jpg" class=" 	">	
+						<h2 class = "servicesContentHeading"> Turf Installation  </h2> 					
+						<div class = "servicesContentBody" > We experts in installation of all forms of turf grass including natural or artificial.
+							 we are also experts in installation and management of astro-turf, the leading synthetic turf in the world
+							 that is not only aesthetically appealing, but it is designed to withstand the demands of the client. 
+							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
+						</div>
+						
+					</div> 
+					
+					
+					<div class = "servicesContent" id = "snowServices"> 
+						<img src="downloads/HotelCarParkjpg.jpg" class=" 	">	
+						<h2 class = "servicesContentHeading"> Snow & Ice Services    </h2> 					
+						<div class = "servicesContentBody" > We offer a variety of snow and ice services ranging from: 
+							snow clearing, snow plowing, to ice melting, salting, sanding and removal or hauling of snow.
+							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
+						</div>
+					</div> 						
+					
+					<div class = "servicesContent" id = "wasteDisposal"> 
+						<img src="downloads/shadeInstall.jpg" class=" 	">	
+						<h2 class = "servicesContentHeading"> Waste Disposal   </h2> 					
+						<div class = "servicesContentBody" > We are a licensed and register solid waste manager and transported, 
+							with the capacity to handling and disposal trash and other  solid waste.
+							we are able to design and effect waste disposal	methods thereby reducing its environmental impact in a bid to address 
+							pollution, contamination, 		and environmental regulations 							
+							<!--	Specializing in a specific area of waste management, such as wastewater treatment or toxic material disposal -->
+							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
+						</div>
+					</div> 
+
+					<div class = "servicesContent" id = "otherServices"> 
+						<img src="downloads/AsroTurfGrass.jpg" class=" 	">	
+						<h2 class = "servicesContentHeading"> Other Services    </h2> 					
+						<div class = "servicesContentBody" > We also offer other services including: management of drainage systems, small-scale 
+							excavations, exceptional cleaning services specializing in removal for man-in-a-van, homes, offices, student belongings,
+							furniture,	and garden rubbish.
+							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
+						</div>
+					</div> 						
+					
+					
+					
+				</div>
+			</div> 
+		
+			<div id = "expertiseDiv" > 
+				<div id = "expertiseContentDiv" >
+					<div id = "expertiseContentHeaderDiv" >  
+						<h2 id = "expertiseContentHeaderDivH">		<img src="downloads/leaf1.png" class=" 	">	<span>  Expertise	  </span>  	</h2> 
+					</div>
+					<div id = "expertiseContentBodyDiv" > 
+						<h2> <b> Our Experience </b> in Garden Landscapping  </h2>
+						<p>  With years of experience, we specialize in creating stunning, functional garden landscapes tailored 
+							to your vision and needs.
+						</p>
+						<p>	Explore our curated collection of seeds and plants, handpicked for their quality and suitability for various climates.
+							Whether you’re looking for heirloom vegetables, fragrant herbs, or colorful flowers, we have something for every gardener
+						</p>
+					
+					</div>
+					<div id = "expertiseContentSkillsDiv" > 
+						<div class = "skillsDiv" >   
+							<div class = "skillsIconDiv" >   
+								<svg xmlns="http://www.w3.org/2000/svg" width="45" height="55" viewBox="0 0 34 35" fill="none">
+									<g clip-path="url(#clip0_126_3423)">
+										<path d="M15.6031 10.0146C17.3881 11.2103 19.8854 11.148 21.9594 10.5569C22.3025 11.4385 22.5311 12.3604 22.6394 13.3002L22.6586 14.6296H14.7332C14.4072 14.6296 14.097 14.7701 13.8818 15.0151C13.6667 15.26 13.5675 15.5858 13.6095 15.9091L14.1252 19.8758C14.1978 20.4344 14.6697 20.8549 15.233 20.8629L16.8622 33.4763C16.9371 34.0403 17.4176 34.4619 17.9865 34.4629H28.48C29.0495 34.4618 29.5301 34.0393 29.6043 33.4746L31.2334 20.8629C31.7961 20.855 32.2679 20.4354 32.3413 19.8775C32.9187 15.4354 32.8569 15.9675 32.8569 15.9108C32.8995 15.5872 32.8005 15.261 32.5853 15.0156C32.3701 14.7702 32.0596 14.6296 31.7332 14.6296H23.7999L23.8271 13.3024C23.9303 12.3612 24.159 11.438 24.5071 10.5575C26.58 11.1502 29.0784 11.2103 30.8628 10.0146C33.5828 8.19394 33.9795 4.00117 33.9971 3.82324C33.9978 3.78887 33.9952 3.75451 33.9891 3.72067C33.9859 3.62856 33.9569 3.5392 33.9053 3.46284V3.45831C33.8996 3.44981 33.8905 3.44584 33.8849 3.43791C33.8372 3.36954 33.7723 3.31499 33.6967 3.27981C33.6741 3.26461 33.6502 3.25134 33.6253 3.24014C33.4621 3.18347 29.5907 1.82631 26.8593 3.65494C24.4034 5.29827 23.8418 8.86827 23.7427 9.67861C23.5098 9.99776 23.337 10.3566 23.2327 10.7377C23.1276 10.3553 22.9549 9.99489 22.7227 9.67351C22.6235 8.85637 22.0591 5.29657 19.606 3.65494C16.8775 1.82687 13.006 3.18291 12.8423 3.23957C12.8174 3.25086 12.7936 3.26413 12.7709 3.27924C12.6954 3.31463 12.6306 3.36913 12.5827 3.43734C12.5771 3.44527 12.568 3.44924 12.5623 3.45774C12.51 3.53554 12.4803 3.6264 12.4768 3.72011C12.4699 3.75405 12.4665 3.78861 12.4666 3.82324C12.4847 4.00117 12.8836 8.19394 15.6031 10.0146ZM13.8266 4.98547L20.8136 9.66387C16.9648 10.3988 14.7593 8.87054 13.8266 4.98547ZM28.48 33.3296H17.9865L16.3766 20.8629H30.0899L28.48 33.3296ZM31.2176 19.7296H15.2489L14.7332 15.7629H31.7332L31.2176 19.7296ZM25.6569 9.66217L32.6433 4.98434C31.7094 8.88641 29.4926 10.3909 25.6569 9.66217ZM32.0647 4.00797L25.0806 8.68411C26.0099 4.82624 28.1859 3.27187 32.0647 4.00797ZM18.9781 4.59957C20.4129 5.56291 21.085 7.43291 21.387 8.68751L14.3995 4.00627C15.6167 3.77337 17.5388 3.63624 18.9781 4.59957Z" fill="#2A7D2E"></path><path d="M17.5667 16.8962H16.4334C16.1204 16.8962 15.8667 17.1499 15.8667 17.4629C15.8667 17.7759 16.1204 18.0296 16.4334 18.0296H17.5667C17.8797 18.0296 18.1334 17.7759 18.1334 17.4629C18.1334 17.1499 17.8797 16.8962 17.5667 16.8962Z" fill="#2A7D2E"></path><path d="M19.8333 16.8962C19.5203 16.8962 19.2666 17.1499 19.2666 17.4629C19.2666 17.7759 19.5203 18.0296 19.8333 18.0296H23.7999C24.1129 18.0296 24.3666 17.7759 24.3666 17.4629C24.3666 17.1499 24.1129 16.8962 23.7999 16.8962H19.8333Z" fill="#2A7D2E"></path><path d="M6.23333 34.4629C9.5812 34.4629 12.4667 25.6671 12.4667 21.3485C12.4667 17.3575 10.2057 16.1828 7.93333 15.8694V13.4815C8.64426 12.9509 9.06408 12.1167 9.06667 11.2296V3.29622C9.06667 1.73142 7.79814 0.462891 6.23333 0.462891C4.66853 0.462891 3.4 1.73142 3.4 3.29622V11.2296C3.40258 12.1167 3.82241 12.9509 4.53333 13.4815V15.8694C2.261 16.1828 0 17.3575 0 21.3485C0 25.6671 2.88547 34.4629 6.23333 34.4629ZM7.2573 16.9399C6.9598 19.6922 6.51667 21.0488 6.23333 21.3814C5.95 21.0488 5.50687 19.6922 5.20937 16.9399C5.89076 16.8815 6.5759 16.8815 7.2573 16.9399ZM4.53333 3.29622C4.53333 2.35734 5.29445 1.59622 6.23333 1.59622C7.17222 1.59622 7.93333 2.35734 7.93333 3.29622V11.2296C7.93333 12.1684 7.17222 12.9296 6.23333 12.9296C5.29445 12.9296 4.53333 12.1684 4.53333 11.2296V3.29622ZM5.66667 14.0062C6.0406 14.0824 6.42607 14.0824 6.8 14.0062V15.7742C6.40843 15.7601 6.06843 15.7595 5.66667 15.7742V14.0062ZM4.08737 17.1082C4.6767 22.5629 5.7613 22.5629 6.23333 22.5629C6.70537 22.5629 7.78997 22.5629 8.3793 17.1082C10.4476 17.5859 11.3333 18.9073 11.3333 21.3485C11.3333 25.6864 8.38667 33.3296 6.23333 33.3296C4.08 33.3296 1.13333 25.6864 1.13333 21.3485C1.13333 18.9073 2.01903 17.5859 4.08737 17.1082Z" fill="#2A7D2E"></path><path d="M6.23341 3.86283C6.54638 3.86283 6.80008 3.60912 6.80008 3.29616C6.80008 2.9832 6.54638 2.72949 6.23341 2.72949C5.92045 2.72949 5.66675 2.9832 5.66675 3.29616C5.66675 3.60912 5.92045 3.86283 6.23341 3.86283Z" fill="#2A7D2E"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_126_3423"><rect width="34" height="34" fill="white" transform="translate(0 0.462891)"></rect></clipPath>
+									</defs>
+								</svg>
+							</div> 
+							<div class = "skillsContentDiv" >   
+								<h2> 95% </h2> 
+								<p>  Gardenning </p>						
+							</div> 
+						</div> 
+						<div class = "skillsDiv" > 
+							<div class = "skillsIconDiv" >   				
+								<svg xmlns="http://www.w3.org/2000/svg" width="45" height="55" viewBox="0 0 34 35" fill="none">
+									<g clip-path="url(#clip0_126_3436)">
+										<path d="M5.09994 31.0628H3.39994V29.3628C3.39994 29.0498 3.14623 28.7961 2.83327 28.7961C2.52031 28.7961 2.2666 29.0498 2.2666 29.3628V31.6295C2.2666 31.9424 2.52031 32.1961 2.83327 32.1961H5.09994C5.4129 32.1961 5.6666 31.9424 5.6666 31.6295C5.6666 31.3165 5.4129 31.0628 5.09994 31.0628Z" fill="#2A7D2E"></path><path d="M30.6 6.69618C28.9427 6.69925 27.5286 7.89564 27.251 9.52951H18.0829C17.772 6.33704 16.506 3.31243 14.45 0.850442C14.231 0.616061 13.9248 0.482688 13.604 0.481937C13.2832 0.481186 12.9764 0.613123 12.7562 0.846475C11.6927 2.09866 10.8364 3.513 10.2198 5.03584C9.67595 3.93903 9.00206 2.91164 8.2127 1.97584C7.99275 1.74328 7.68676 1.61152 7.36667 1.61152C7.04657 1.61152 6.74059 1.74328 6.52063 1.97584C4.71751 4.14604 3.51336 6.7501 3.0277 9.52951H2.26667C1.01482 9.52951 0 10.5443 0 11.7962V32.1962C0 33.448 1.01482 34.4628 2.26667 34.4628H30.6C32.477 34.461 33.9981 32.9398 34 31.0628V10.0962C33.9981 8.21918 32.477 6.69805 30.6 6.69618ZM30.6 7.82951C31.8518 7.82951 32.8667 8.84433 32.8667 10.0962V28.5355C31.5795 27.372 29.6205 27.372 28.3333 28.5355V10.0962C28.3333 8.84433 29.3482 7.82951 30.6 7.82951ZM24.9333 10.6628H27.2V31.0628C27.2002 31.9005 27.5114 32.7083 28.0732 33.3295H13.6V31.6295C13.6 31.0036 14.1074 30.4962 14.7333 30.4962H19.2667C22.3949 30.4927 24.9299 27.9577 24.9333 24.8295V10.6628ZM13.5955 1.59618C15.7314 4.14151 16.9327 7.34073 17 10.6628C17 13.9348 15.9743 15.9328 14.1667 16.2728V14.0628C14.1667 13.7499 13.913 13.4962 13.6 13.4962C13.287 13.4962 13.0333 13.7499 13.0333 14.0628V16.2728C12.3945 16.1528 11.8203 15.8066 11.4161 15.2976C11.762 14.1635 11.9253 12.9816 11.9 11.7962C11.89 9.98959 11.5441 8.20062 10.88 6.52051C11.4655 4.72207 12.387 3.05107 13.5955 1.59618ZM7.36667 2.72951C8.38406 3.9434 9.19831 5.31394 9.77783 6.78798L9.78237 6.79818C10.4242 8.38674 10.7583 10.0829 10.7667 11.7962C10.7667 15.0681 9.741 17.0662 7.93333 17.4062V15.4308L9.4673 13.8968C9.68205 13.6745 9.67898 13.321 9.4604 13.1024C9.24181 12.8839 8.88838 12.8808 8.66603 13.0955L7.36667 14.3949L6.0673 13.0955C5.84495 12.8808 5.49152 12.8839 5.27294 13.1024C5.05435 13.321 5.05128 13.6745 5.26603 13.8968L6.8 15.4308V17.4062C4.99233 17.0662 3.96667 15.0687 3.96667 11.7962C4.04038 8.4761 5.23914 5.27941 7.36667 2.72951ZM1.13333 32.1962V11.7962C1.13333 11.1703 1.64074 10.6628 2.26667 10.6628H2.88433C2.85317 11.0329 2.83333 11.4097 2.83333 11.7962C2.83333 17.2311 5.40657 18.3474 6.8 18.5525V24.2628C6.8 24.5758 7.05371 24.8295 7.36667 24.8295C7.67963 24.8295 7.93333 24.5758 7.93333 24.2628V18.5525C9.21254 18.362 10.324 17.5723 10.9248 16.427C11.5048 16.9733 12.2429 17.3219 13.0333 17.4226V23.1295C13.0333 23.4425 13.287 23.6962 13.6 23.6962C13.913 23.6962 14.1667 23.4425 14.1667 23.1295V17.4192C15.5601 17.2141 18.1333 16.0977 18.1333 10.6628H19.8333V24.8295C19.8333 25.4554 19.3259 25.9628 18.7 25.9628H14.1667C11.0385 25.9663 8.50344 28.5013 8.5 31.6295V33.3295H2.26667C1.64074 33.3295 1.13333 32.8221 1.13333 32.1962ZM9.63333 33.3295V31.6295C9.63614 29.127 11.6641 27.099 14.1667 27.0962H18.7C19.9518 27.0962 20.9667 26.0814 20.9667 24.8295V10.6628H23.8V24.8295C23.7972 27.332 21.7692 29.36 19.2667 29.3628H14.7333C13.4815 29.3628 12.4667 30.3777 12.4667 31.6295V33.3295H9.63333ZM30.6 33.3295C29.3482 33.3295 28.3333 32.3147 28.3333 31.0628C28.3333 29.811 29.3482 28.7962 30.6 28.7962C31.8518 28.7962 32.8667 29.811 32.8667 31.0628C32.8667 32.3147 31.8518 33.3295 30.6 33.3295Z" fill="#2A7D2E"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_126_3436"><rect width="34" height="34" fill="white" transform="translate(0 0.462891)"></rect></clipPath>
+									</defs>
+								</svg>
+							</div> 
+							<div class = "skillsContentDiv" >   
+								<h2> 87% </h2> 
+								<p>  Landscapping </p>						
+							</div>					
+						</div> 
+						<div class = "skillsDiv" >   
+							<div class = "skillsIconDiv" >   							
+								<svg xmlns="http://www.w3.org/2000/svg" width="45" height="50" viewBox="0 0 34 34" fill="none">
+									<g clip-path="url(#clip0_238_957)">
+										<path d="M26.3535 8.08975C26.3724 8.09187 26.3912 8.09294 26.41 8.09294C26.66 8.09294 26.8755 7.90501 26.9042 7.65068L26.9417 7.31825C26.9419 7.31579 26.9422 7.3134 26.9424 7.31101C26.9461 7.27436 27.4159 3.59828 31.5166 1.82366C31.7691 1.71443 31.8852 1.42125 31.7759 1.16884C31.6666 0.916365 31.3732 0.800155 31.121 0.909591C27.2254 2.59543 26.0694 6.02507 25.9515 7.21001L25.9143 7.53905C25.8835 7.81237 26.0801 8.05894 26.3535 8.08975Z" fill="#2A7D2E"></path><path d="M5.06562 8.00078C5.27148 9.29715 6.49487 10.1944 7.79249 10.001C7.85697 9.99135 7.92318 9.98152 7.99018 9.9715L6.22785 11.2183C5.70849 11.5857 5.58491 12.307 5.95233 12.8265C6.38961 13.4446 7.08428 13.7747 7.78944 13.7747C8.23788 13.7747 8.69056 13.6411 9.08368 13.363L9.92438 12.7682L9.7324 13.047C9.37168 13.5709 9.50429 14.2907 10.0282 14.6516C10.4073 14.9127 10.847 15.0486 11.2976 15.0486C11.4344 15.0486 11.5722 15.036 11.7096 15.0107C12.2998 14.902 12.8122 14.5699 13.1525 14.0757L16.8906 8.64843C17.7968 8.51383 18.6202 8.39158 19.2899 8.29217C20.1835 8.15949 21.0735 8.52771 21.6128 9.25286C22.1492 9.97429 22.2529 10.9315 21.8834 11.751L21.3919 12.8415C20.8506 14.0425 20.9869 15.4565 21.7477 16.5319C22.0667 16.9829 22.5423 17.2827 23.0868 17.376C23.2048 17.3962 23.3231 17.4062 23.4404 17.4062C23.8644 17.4062 24.2773 17.2757 24.6305 17.0258C24.9731 16.7834 25.1162 16.3373 24.9788 15.9408L24.7264 15.2134C24.5491 14.7022 24.6149 14.1476 24.907 13.6921L25.6286 12.567C26.1255 11.7761 26.503 10.9024 26.642 9.97488C26.6728 9.70163 26.4761 9.45506 26.2028 9.42418C25.9301 9.39304 25.683 9.58993 25.6521 9.86332C25.5251 10.6381 25.2066 11.3667 24.7902 12.0293L24.0686 13.1544C23.6105 13.8686 23.5074 14.7381 23.7854 15.5399L24.0258 16.2328C23.7978 16.3833 23.5257 16.4407 23.255 16.3942C22.9728 16.3458 22.7263 16.1905 22.5609 15.9567C22.0031 15.1682 21.9031 14.1314 22.3 13.2509L22.7915 12.1604C23.3095 11.0117 23.164 9.66982 22.4121 8.65853C21.6534 7.63821 20.4012 7.12044 19.1435 7.30691C16.2762 7.73257 10.5906 8.57698 7.64567 9.01586C6.9004 9.12635 6.19757 8.62373 6.05699 7.88822L8.83167 7.25903C9.09995 7.1982 9.26809 6.93139 9.20726 6.66318C9.14644 6.3949 8.87962 6.22676 8.61141 6.28759L5.76693 6.93258C5.29552 7.0395 4.98567 7.49716 5.06144 7.97482L5.06562 8.00078ZM8.50848 12.5498C7.94549 12.9479 7.1637 12.8139 6.76553 12.2511C6.7154 12.1802 6.73226 12.0816 6.80319 12.0314C6.87065 11.9738 10.1561 9.6491 10.1561 9.6491C11.1281 9.50453 12.1916 9.34642 13.2611 9.18751L8.50848 12.5498ZM12.3322 13.5106C12.1428 13.7858 11.8576 13.9706 11.5291 14.0311C11.2006 14.0918 10.8683 14.0206 10.5933 13.8312C10.5217 13.7819 10.5035 13.6835 10.5528 13.6119L12.2834 11.0994C12.3628 11.0312 15.4224 8.86638 15.4224 8.86638C15.4224 8.86638 15.5031 8.85436 15.5433 8.84838L12.3322 13.5106Z" fill="#2A7D2E"></path><path d="M10.9931 6.75626C11.0295 6.75626 11.0666 6.75214 11.1037 6.74378L12.8532 6.347C14.3546 6.00661 15.8187 5.49403 17.2047 4.82346L20.8315 3.06896C21.5867 2.70367 22.3101 2.2634 22.9815 1.76044C23.2017 1.59556 23.2465 1.28339 23.0816 1.06325C22.9167 0.843185 22.6046 0.798295 22.3844 0.963179C21.7639 1.42795 21.0956 1.83475 20.3978 2.17229L16.7709 3.92686C15.4528 4.56455 14.0606 5.05196 12.6329 5.37562L10.8834 5.7724C10.6151 5.83322 10.447 6.10004 10.5078 6.36825C10.5603 6.59941 10.7656 6.75626 10.9931 6.75626Z" fill="#2A7D2E"></path><path d="M20.2703 20.5202C20.4017 20.5202 20.5353 20.5038 20.6683 20.4694C21.0798 20.363 21.4254 20.1027 21.6412 19.7365C21.857 19.3702 21.9173 18.9418 21.811 18.5303C21.6768 18.011 21.3247 17.5044 20.7644 17.0245C20.3686 16.6855 20.0059 16.4813 19.9907 16.4728C19.7584 16.3429 19.4648 16.4188 19.3245 16.645C19.3153 16.6599 19.097 17.0141 18.915 17.5024C18.6575 18.1937 18.5949 18.8074 18.7291 19.3267V19.3267C18.9144 20.0434 19.5622 20.5202 20.2703 20.5202ZM19.9353 17.6332C20.2998 17.914 20.7319 18.3356 20.8466 18.7795C20.8864 18.9335 20.8639 19.0937 20.7831 19.2308C20.7023 19.3678 20.5731 19.4652 20.4191 19.505C20.1015 19.5875 19.7758 19.3955 19.6936 19.0775C19.5788 18.6336 19.7525 18.0553 19.9353 17.6332Z" fill="#2A7D2E"></path><path d="M15.6284 16.081C15.6109 16.0803 15.1948 16.0723 14.6818 16.1635C13.9555 16.2925 13.395 16.5503 13.0157 16.9294C12.7151 17.2301 12.5496 17.6298 12.5496 18.0549C12.5496 18.4799 12.7151 18.8796 13.0157 19.1803C13.326 19.4906 13.7335 19.6457 14.1411 19.6456C14.5486 19.6456 14.9562 19.4905 15.2665 19.1803C15.6457 18.801 15.9034 18.2405 16.0325 17.5141C16.1236 17.001 16.1153 16.585 16.1149 16.5675C16.1089 16.3015 15.8945 16.0871 15.6284 16.081ZM14.5622 18.476C14.33 18.7082 13.9522 18.7081 13.72 18.476C13.6075 18.3635 13.5456 18.214 13.5456 18.0549C13.5456 17.8958 13.6076 17.7464 13.72 17.6339C14.044 17.3098 14.63 17.1658 15.0862 17.109C15.0288 17.5632 14.8846 18.1536 14.5622 18.476Z" fill="#2A7D2E"></path><path d="M17 25.4214C18.0371 25.4214 18.8808 24.5777 18.8808 23.5406C18.8808 22.0267 17.4068 20.601 17.344 20.5411C17.1515 20.3571 16.8485 20.3571 16.6559 20.5411C16.5931 20.601 15.1191 22.0267 15.1191 23.5406C15.1192 24.5776 15.9629 25.4214 17 25.4214ZM17 21.6388C17.3925 22.1155 17.8848 22.8693 17.8848 23.5406C17.8848 24.0285 17.4879 24.4253 17.0001 24.4253C16.5123 24.4253 16.1154 24.0284 16.1154 23.5406C16.1153 22.8691 16.6076 22.1152 17 21.6388Z" fill="#2A7D2E"></path><path d="M17.1121 14.9901C17.3594 15.1 17.618 15.152 17.8726 15.152C18.5938 15.152 19.2833 14.735 19.5944 14.0345C20.2088 12.6509 19.4402 10.7496 19.4072 10.6693C19.306 10.4232 19.0291 10.2999 18.7782 10.3901C18.6966 10.4194 16.7709 11.1243 16.1564 12.5079C15.7355 13.4557 16.1643 14.5693 17.1121 14.9901ZM17.0668 12.9121C17.3392 12.2985 18.0952 11.8093 18.6472 11.5329C18.8124 12.1279 18.9564 13.0166 18.684 13.6301C18.4859 14.076 17.9622 14.2775 17.5163 14.0798C17.0705 13.8818 16.8688 13.3579 17.0668 12.9121Z" fill="#2A7D2E"></path><path d="M33.5018 25.2989H32.4153C33.6968 24.1457 34.2765 22.371 33.8737 20.6488L33.6966 19.8923C33.66 19.7361 33.5505 19.607 33.4022 19.5457C33.2542 19.4842 33.0854 19.4979 32.949 19.5827L32.2889 19.9924C31.6845 20.3676 31.1866 20.8613 30.8129 21.4293C30.434 20.8518 29.9343 20.3632 29.3368 19.9924L28.6768 19.5827C28.5404 19.498 28.3717 19.4843 28.2235 19.5457C28.0753 19.607 27.9658 19.7361 27.9292 19.8923L27.7521 20.6488C27.3433 22.3965 27.9457 24.1985 29.267 25.35C28.7556 25.4694 28.3057 25.7949 28.0376 26.2593L27.1539 27.7897C26.9187 28.197 26.4975 28.4402 26.0272 28.4402C25.5568 28.4402 25.1356 28.197 24.9004 27.7897L24.0168 26.2593C23.6749 25.6669 23.0375 25.2989 22.3534 25.2989H20.7829C20.0988 25.2989 19.4615 25.6669 19.1195 26.2593L18.2359 27.7897C18.0007 28.197 17.5794 28.4402 17.1091 28.4402C16.6387 28.4402 16.2175 28.197 15.9824 27.7897L15.0988 26.2593C14.7568 25.6669 14.1194 25.2989 13.4354 25.2989H11.7984C11.1144 25.2989 10.477 25.6669 10.135 26.2593L9.25143 27.7897C9.01622 28.197 8.59508 28.4402 8.12473 28.4402C7.65438 28.4402 7.23317 28.197 6.99796 27.7897L6.11437 26.2593C5.82484 25.7577 5.32328 25.418 4.76116 25.3253C5.07792 25.045 5.35595 24.7242 5.5911 24.365C5.74177 24.135 5.67729 23.8262 5.4472 23.6756C5.21703 23.525 4.90838 23.5894 4.75771 23.8195C4.43883 24.3085 4.01609 24.7082 3.51413 25.0079C3.09365 23.3755 3.80745 21.6518 5.25914 20.7949C5.34633 21.1433 5.38836 21.5028 5.37628 21.8606C5.36758 22.1356 5.58339 22.3655 5.85831 22.3741C6.13204 22.3837 6.36319 22.1671 6.37183 21.8921C6.38504 21.4749 6.34334 21.0565 6.24791 20.6487L6.07088 19.8922C6.03435 19.736 5.92478 19.607 5.7765 19.5456C5.62828 19.484 5.45948 19.4978 5.32328 19.5826L4.66315 19.9923C4.05872 20.3675 3.56082 20.8612 3.18715 21.4293C2.80824 20.8517 2.30848 20.3631 1.71116 19.9923L1.05109 19.5826C0.914823 19.498 0.74602 19.4841 0.59787 19.5456C0.449653 19.607 0.340084 19.736 0.303494 19.8922L0.126457 20.6487C-0.276491 22.371 0.303229 24.1456 1.58472 25.2988H0.498328C0.223277 25.2988 0.000287014 25.5218 0.000287014 25.7969C0.000287014 26.072 0.223277 26.2949 0.498328 26.2949H4.45098C4.78022 26.2949 5.08708 26.4721 5.25176 26.7572L6.13536 28.2877C6.55059 29.0069 7.29433 29.4362 8.12473 29.4362C8.95513 29.4362 9.69887 29.0069 10.1141 28.2877L10.9977 26.7572C11.1623 26.4721 11.4692 26.2949 11.7985 26.2949H13.4354C13.7647 26.2949 14.0716 26.4721 14.2362 26.7572L15.1198 28.2877C15.535 29.0069 16.2787 29.4362 17.1092 29.4362C17.9397 29.4362 18.6834 29.0069 19.0986 28.2877L19.9822 26.7572C20.1468 26.4721 20.4537 26.2949 20.783 26.2949H22.3535C22.6828 26.2949 22.9897 26.472 23.1543 26.7572L24.0379 28.2877C24.4532 29.0069 25.1968 29.4362 26.0273 29.4362C26.8578 29.4362 27.6015 29.0069 28.0167 28.2877L28.9004 26.7572C29.065 26.472 29.3718 26.2949 29.7011 26.2949H33.5019C33.777 26.2949 34 26.072 34 25.7969C34 25.5218 33.777 25.2989 33.5018 25.2989ZM1.09644 20.8757L1.11537 20.7948C1.79802 21.201 2.33298 21.7994 2.65285 22.5246C2.41731 23.2196 2.34062 23.9706 2.44567 24.7225C1.29592 23.8194 0.757575 22.3241 1.09644 20.8757ZM32.8142 20.8387L32.8848 20.7948C33.3053 22.4273 32.5914 24.1509 31.1397 25.0079C30.7284 23.403 31.4047 21.7114 32.8142 20.8387ZM28.722 20.8757L28.741 20.7948C29.4236 21.2011 29.9587 21.7994 30.2785 22.5246C30.0429 23.2196 29.9662 23.9706 30.0713 24.7224C28.9215 23.8194 28.3831 22.3241 28.722 20.8757Z" fill="#2A7D2E"></path><path d="M2.01757 31.5283C2.29263 31.5283 2.51561 31.3053 2.51561 31.0303C2.51561 30.7552 2.29263 30.5322 2.01757 30.5322C1.74251 30.5322 1.51953 30.7552 1.51953 31.0303C1.51953 31.3053 1.74251 31.5283 2.01757 31.5283Z" fill="#2A7D2E"></path><path d="M3.12866 29.8428C3.40372 29.8428 3.6267 29.6198 3.6267 29.3447C3.6267 29.0697 3.40372 28.8467 3.12866 28.8467C2.8536 28.8467 2.63062 29.0697 2.63062 29.3447C2.63062 29.6198 2.8536 29.8428 3.12866 29.8428Z" fill="#2A7D2E"></path><path d="M4.09814 31.6499C4.3732 31.6499 4.59618 31.4269 4.59618 31.1518C4.59618 30.8768 4.3732 30.6538 4.09814 30.6538C3.82308 30.6538 3.6001 30.8768 3.6001 31.1518C3.6001 31.4269 3.82308 31.6499 4.09814 31.6499Z" fill="#2A7D2E"></path><path d="M9.32495 32.6514C9.60001 32.6514 9.82299 32.4284 9.82299 32.1533C9.82299 31.8783 9.60001 31.6553 9.32495 31.6553C9.04988 31.6553 8.8269 31.8783 8.8269 32.1533C8.8269 32.4284 9.04988 32.6514 9.32495 32.6514Z" fill="#2A7D2E"></path><path d="M11.5102 30.3896C11.7853 30.3896 12.0083 30.1667 12.0083 29.8916C12.0083 29.6165 11.7853 29.3936 11.5102 29.3936C11.2352 29.3936 11.0122 29.6165 11.0122 29.8916C11.0122 30.1667 11.2352 30.3896 11.5102 30.3896Z" fill="#2A7D2E"></path><path d="M18.0413 33.1362C18.3163 33.1362 18.5393 32.9132 18.5393 32.6382C18.5393 32.3631 18.3163 32.1401 18.0413 32.1401C17.7662 32.1401 17.5432 32.3631 17.5432 32.6382C17.5432 32.9132 17.7662 33.1362 18.0413 33.1362Z" fill="#2A7D2E"></path><path d="M20.2327 29.9626C20.5077 29.9626 20.7307 29.7397 20.7307 29.4646C20.7307 29.1895 20.5077 28.9666 20.2327 28.9666C19.9576 28.9666 19.7346 29.1895 19.7346 29.4646C19.7346 29.7397 19.9576 29.9626 20.2327 29.9626Z" fill="#2A7D2E"></path><path d="M22.0837 29.0044C22.3588 29.0044 22.5818 28.7814 22.5818 28.5063C22.5818 28.2313 22.3588 28.0083 22.0837 28.0083C21.8087 28.0083 21.5857 28.2313 21.5857 28.5063C21.5857 28.7814 21.8087 29.0044 22.0837 29.0044Z" fill="#2A7D2E"></path><path d="M22.1479 30.9592C22.423 30.9592 22.646 30.7362 22.646 30.4612C22.646 30.1861 22.423 29.9631 22.1479 29.9631C21.8729 29.9631 21.6499 30.1861 21.6499 30.4612C21.6499 30.7362 21.8729 30.9592 22.1479 30.9592Z" fill="#2A7D2E"></path><path d="M29.8848 31.8579C30.1598 31.8579 30.3828 31.6349 30.3828 31.3599C30.3828 31.0848 30.1598 30.8618 29.8848 30.8618C29.6097 30.8618 29.3867 31.0848 29.3867 31.3599C29.3867 31.6349 29.6097 31.8579 29.8848 31.8579Z" fill="#2A7D2E"></path><path d="M31.5249 30.3596C31.8 30.3596 32.0229 30.1366 32.0229 29.8616C32.0229 29.5865 31.8 29.3635 31.5249 29.3635C31.2498 29.3635 31.0269 29.5865 31.0269 29.8616C31.0269 30.1366 31.2498 30.3596 31.5249 30.3596Z" fill="#2A7D2E"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_238_957"><rect width="34" height="34" fill="white"></rect></clipPath>
+									</defs>
+								</svg>
+
+							</div> 
+							<div class = "skillsContentDiv" >   
+								<h2> 90% </h2> 
+								<p>  Seeds and Plants </p>						
+							</div>
+						</div> 
+					
+					</div>
+
+				</div>
+				<div id = "expertiseGalleryDiv" > 
+					<img src="downloads/flowerinPot.jpg" class="expertiseCaption"  id = "expertiseCaption1" >	
+					<img src="downloads/slabs2.jpg" class="expertiseCaption"  id = "expertiseCaption1" >	
+					<img src="downloads/shadeInstall2.jpg" class="expertiseCaption"  id = "expertiseCaption2" >	
+					<img src="downloads/turf.jpg" class="expertiseCaption"  id = "expertiseCaption4" >	
+					<img src="downloads/HotelCarParkjpg.jpg" class="expertiseCaption"  id = "expertiseCaption3" >	
+						
+				</div>
+			</div>
+		
+			
+		</div>
+		
+		
+		<div class="footerDiv">  
+			<div class = "footer w3-padding-top-16 w3-white"> 	<!--	<div> Subscribe			</div> 			-->
+				<div class = "w3-row" id=""> 
+					<div class = "w3-col w3-container  l4  "> 		
+							<h3  class = "footerMenu"> 	About		</h3>		<!-- WRAP TEXT AROUND LOGO 		-->
+							<div class = " " id = "aboutContent" > <!--	  style = " display: grid; grid-gap: 5px; grid-template-columns: 30% auto ;  " >		-->
+									<img src="downloads/AGardensInvoiceLogoSmall.jpg" class=" w3-margin-right" style=" width: 45%; 		">
+									<p style = "font-size: 16px; text-indent: 20px; color: green!important;" >  A-Garden Cambridge offers premium services
+									  ranging from the design and installation of many landscape construction projects including walkways, steps, 
+									  patios, planting, trans-planting, drainage systems, lawn renovation and installation,
+									  paver driveways, and excavation.</p> 
+									<p  style = "font-size: 16px; text-indent: 20px; padding: 10px; " >  
+										<!--	<i class="fa-brands fa-tiktok"  aria-hidden="true"></i>		-->
+										<i class="fa fa-tiktok" aria-hidden="true"></i>					
+										<i class="fa fa-instagram" aria-hidden="true"></i>					
+										<i class="fa fa-facebook" aria-hidden="true"></i>															
+										<!--	<i class="fa fa-whatsapp" aria-hidden="true"></i>		-->
+										<!--	<i class="fa fa-linkedin" aria-hidden="true"></i>		-->
+									</p>
+							</div> 
+							
+							
+					</div> 
+					<div class = "w3-col w3-container  l2 "> 		
+							<h3  class = "footerMenu" > 	Explore			</h3>
+							<p class = "midParagraph"  style = "margin-top: 40px; " > <a href="index.html" >Home</a>			  </p>
+							<p class = "midParagraph"> 			<a href="aboutUs.html"  >About Us</a> 			</p>
+							<p class = "midParagraph"> 			<a href="" class="link-1" >Services</a>			 </p>
+							<p class = "midParagraph"> 			<a href="gallery.html"  >Gallery</a>				 </p>
+							<p class = "midParagraph"> 			<a href="contactUs.html">Contact Us</a>			 </p>
+					
+					</div> 
+					<div class = "w3-col w3-container  l3 "> 		
+							<h3 class = "footerMenu  "> 		Services	</h3> 
+								<nav class = "ServicesNav" >
+									<a href="#">	Gardens maintenance		</a>   
+									<a href="#">	House & Office Cleaning	</a>
+									<a href="#">	Fence Installation & Repairs 	</a>
+									<a href="#">	Rubbish Clearance, Waste Disposal	</a>
+									<a href="#">	Shade Installation & Disposal 	</a>
+									<a href="#">	Van Removals	</a>
+								</nav>
+					</div> 
+					<div class = "w3-col w3-container  l3 w3-transparent "> 		
+							<h3 class = "footerMenu" > 		Get in Touch		</h3>
+							<p class = "smallParagraph"  style = "margin-top: 40px; " >  <i class="fas fa-map-marker-alt"></i>  Cambridge, United Kingdom	</P> 
+							<p class = "smallParagraph" >  <i class="fas fa-phone-alt"></i>	 +44 77 29 00 34 95 </P> 
+							<p class = "smallParagraph" >  <i class="fas fa-at"></i>  agcambs@gmail.com </P> 
+							<p class = "smallParagraph" >  <i class="far fa-clock"></i> 	Mon - Sat 8:00 - 18:00 	</p>
+							
+					</div> 
+					
+				</div> 
+
+			</div> 
+
+			<div id="footbar" class = "w3-row w3-padding-small" >
+				<div class = "w3-col l6 " id="footbarCopyright" style = "text-align: left; color:  green!important; " > 	
+					<p> 	A-Gardens Cambridge &copy; 2024-25. All rights reserved	</p>
+				</div>
+				<div class = "w3-col l6 " style = "text-align: right; color:  green!important; "  id="footbarLinks">  	
+						<p class="footerLinks"   style = "text-align: right;" >
+							<a href="#index" class="link-1">Home</a>
+							<a href="aboutUs.html">About Us</a>					
+							<a href="services.html">Services</a>			
+							<a href="gallery.html">Gallery</a>					
+							<a href="contactUs.html">Contact Us</a>
+						</p>
+				</div>
+			 
+			</div>
+		  
+		</div>
+
+
+		<script>		//	Testimonial slide script
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" activeDot", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " activeDot";
+				setTimeout(showSlides, 4000); // Change image every 2 seconds
+			}
+		</script>
+
+	</body>
+</html> 

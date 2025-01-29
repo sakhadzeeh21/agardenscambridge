@@ -1,0 +1,758 @@
+						/*         GENERAL		*/
+			:root {
+				--main-blue: #90caf9;
+				--main-white: #fff;
+				--main-grey: rgba(255, 255, 255, 0.23);
+				--main-dark-grey: #121212;
+				--main-ease: cubic-bezier(.65,.05,.36,1);
+			}
+			@font-face {  font-family: Moderne Sans;  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2)}
+			* {  box-sizing: border-box;}
+			
+            body {margin:0;}
+				/*		MENUS  */
+			.menuBarDiv {  width: 100%;  background-color: #555;  overflow: auto;
+						padding: 20px 25px ; margin: 0px;  background-color: black; color: white;  
+						background-image: url("downloads/HotelCarPark2Cropped2.jpg");	background-size: 100% 100% ;
+		
+			}
+			
+			
+				.menuBarMenusDiv 		{ padding-top: 5px;  display: grid; grid-gap: 5px; grid-template-columns: 25% 50%  auto ; 	}
+					.menuBarLogoDiv		{ background: transparent; 	}
+						.menuBarLogoDiv img	{ width: 100px; }
+					.menuBarLinksDiv	{	background: transparent; 	}
+						.headerNav 	{	 margin-top: 40px;		}
+						.headerNav a {  text-decoration: none;  color: inherit;  padding: 1.3rem;  }
+						.headerNav a:hover {  background-color: black;		font-weight: bold;		}
+						.headerNav a.activeMenu { background-color: #eee;  color: green;  font-weight: bold; }
+
+					.menuBarContactDiv	{ background: transparent; 	  }
+						.socialMedia  {	margin-top: 10px; margin-left: 25px; text-align:center;  }		
+						.socialMedia  img { height: 35px;  margin-right: 15px; border-radius: 50%;    position: relative;}
+						.socialMedia img:hover  {    /* height: 50px;  z-index: 5; */ transform: scale(1.4);   	    transition: 200ms ease-in;   }
+						
+						
+						.tooltip {  position: relative;  display: inline-block;  }
+						.tooltip .tooltiptext { visibility: hidden;  width: 200px;  background-color: black;  color: #fff;  text-align: center;  border-radius: 6px;  
+												padding: 5px ;		position: absolute;  z-index: 1;  top: 120%;  left: 50%;  margin-left: -105px;		}
+						.tooltip .tooltiptext::after {  content: "";  position: absolute;  bottom: 100%;  left: 50%;  margin-left: -5px;  border-width: 5px;  border-style: solid;
+														border-color: transparent transparent black transparent; 		}
+						.tooltip:hover .tooltiptext {  	visibility: visible;   transition: 1s ease-in;   }
+					
+				
+				.pageTitleDiv			{		height: 26vh; padding-top: 5px;  width: 80%; background: transparent;   align-items: center; z-index : 2; }
+					.pageTitleHeader	{		 font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 10vmin!important;  text-align: left;
+							padding-top: 0px; margin: 1rem 2rem;  color: #eee;  font-style: bold;	/*  mix-blend-mode: overlay; */ 		}
+					.pageTitleParagraph	{ font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 4vmin;  text-align: left; 
+							text-indent:40px;	margin: 1rem 1.5rem;   color: #eee;  font-weight: 60;		mix-blend-mode: overlay;  		}
+				
+				/* Responsive layout  */
+				@media screen and (max-width: 1232px) {
+						.menuBarDiv 				{ padding: 10px 15px ;		overflow: hidden; }
+							.menuBarMenusDiv 		{	padding-top: 5px;  display: grid; grid-gap: 2px; grid-template-columns: 18% 55%  auto ; 	}
+								.menuBarLogoDiv img	{ 	padding-top: 10px; width: 80px; }							
+							.headerNav 				{	 margin-top: 20px;		}
+								.headerNav a 		{   padding: .7rem;  }
+								.socialMedia  img 	{ height: 30px;  }
+							
+				}
+
+				@media screen and (max-width: 992px) {
+					.menuBarMenusDiv {	grid-template-columns: 10% 65%  auto;	background-size: 90% 90% ;		}
+					.menuBarLogoDiv img	{ width: 70px; }
+					.headerNav a {   padding: .5rem;  }
+					.socialMedia  img { height: 24px;     position: relative;}
+						
+					
+				}
+				@media screen and (max-width: 768px) {
+					.menuBarMenusDiv {	grid-template-columns: 70%  auto ;		background-size: 90% 90% ;			}
+					.menuBarLogoDiv	{ 	display: none; 	}
+					.headerNav a {  font-size: .9rem;  padding: .4rem;  }
+
+					.pageTitleHeader	{	font-size: 8vmin!important;  margin: 1rem 1.5rem;  		}
+					.pageTitleParagraph	{   font-size: 4min; 	margin: 0.8rem 1.3rem;     		}
+			
+						
+				}
+				@media screen and (max-width: 480px) {
+					.menuBarMenusDiv 	{	display: table; }
+						.menuBarContactDiv	{ 	display: none; 	}
+
+				}
+
+                /*			CONTACT US	*/
+			
+			#contactUsDiv		{	  background: #0b3d2c; color: white;   display: grid; 		 grid-template-columns: 50% auto ;		}
+			#contactUsMap		{	  background: #0b3d2c; color: white; 	padding: 15px; 	}
+			#contactUsForm		{	  background: #0b3d2c; color: white; 	}
+				.msg	{		WIDTH:40%;	margin: 10px auto;	padding: 5px;	border-radius: 5px;	color: #3c763d;	background: #dff0d8;  border: 1px solid #3c763d;  text-align: center;	}
+				.contactformHeader {   font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 5vmin;  text-align: center;  color: #eee;  }					
+				.contactformParagraph{   font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 3.5vmin;  text-align: left; 
+							padding-left: 20px; text-indent:40px;	 color: #eee; }
+		
+			#contactForm  {   width: 99%; margin: 5px auto ; padding: 5px;  BORDER: 1PX SOLID #BBBBBB;	BORDER-RADIUS: 5PX;	} 
+				.formInput, .formText		{	margin: 2px; display: grid; grid-template-columns: 20% auto ; 		}
+				.formInput		{	height: 40px;		}
+				.formInput input, .formInput select { width: 100%;    color: var(--main-white);    height: 2.5rem;    outline: 1px solid var(--main-grey);    border-radius: 5px;    border: none;
+					background-color: var(--main-dark-grey);    padding-left: 20px;    font-size: 18px;    transition: .1s var(--main-ease);
+				}
+				.formInput label, .formText  label {   margin: 3px;  background-color: transparent;    color: rgba(255, 255, 255, 0.5);
+					text-align: right;    transition: .2s var(--main-ease);    font-size: 1.3rem;    pointer-events: none;    padding: 0 5px;  
+				}
+				.formText textarea {    color: var(--main-white);    height: 6rem;  width: 100%;   outline: 1px solid var(--main-grey);    border-radius: 5px;    border: none;
+					background-color: var(--main-dark-grey);    padding-left: 20px;    font-size: 15px;    transition: .1s var(--main-ease);  display: block; 
+				}
+				
+				.formButtons {	align-items: center;  padding: 3px;  	}
+					.formButtons button{	width: 30%; padding: 5px; margin: 4px ;   border-radius: 10px; background: #dfa ; color: green; float: right; font-size: 1.2rem; 	}
+					
+			
+                    		/*		CONTACT US BANNER		*/
+			#contactUsBannerDiv		{	padding: 10px; height: 400px; /* background: url(mountain.jpg);	 */  
+										background-image: url("downloads/shadeInstall3.jpg"); background-repeat: no-repeat; 
+									background-size: 100% 100%;	
+									}
+			/*	{	background-color: black; color: white; opacity: 0.6; 	object-fit: cover;    object-position: center; }		*/
+			.contactUsBannerHeader  	{   padding-top: 20px; font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 6vmin;  text-align: center;  color: #ddd;  }					
+			.contactUsBannerSmallFont, .contactUsBannerLargeFont	{	font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif; 
+							padding: 20px; text-indent:40px;	 color: white; 	font-weight: bold;	/* */ /*	*/   }
+			.contactUsBannerSmallFont	{	 font-size: 3.5vmin; 	text-align: left; 	 	}
+			.contactUsBannerLargeFont	{	 font-size: 4.5vmin;  	text-align: center; 	}
+			.contactUsLink				{	  color: yellow; 	 	}
+		
+            	/*		RESPONSIVE LAYOUT - CONTACT US AND CONTACT US BANNER  */
+			/* On screens that are 992px wide or less, the background color is blue */
+			@media screen and (max-width: 992px) {
+				#contactUsDiv {	display: table; 	}
+					#contactUsMap		{	 padding: 15px; width: 100%;	}
+					#contactUsForm		{	  background: #0b3d2c; color: white;  }
+				
+				#contactUsBannerDiv		{	padding: 10px;  }
+					.contactUsBannerHeader  	{   padding-top: 10px;   font-size: 5vmin;  text-align: center;  color: #ddd;  }					
+					.contactUsBannerSmallFont	{	 font-size: 3vmin; 	text-align: left; 	 	}
+					.contactUsBannerLargeFont	{	 font-size: 4vmin;  	text-align: center; 	}
+			
+			
+				
+				
+				
+			}
+
+			/* On screens that are 600px wide or less, the background color is olive */
+			@media screen and (max-width: 480px) {
+				#contactUsDiv {		background-color: #0b3d2c;		color: white;			  }
+				.formInput label, .formText  label {      font-size: 1.1rem;    			}
+			}
+            
+            
+            
+            				/*			GALLERY 	#0b3d2e  */
+				#galleryDiv		{	  background: #0b3d2e;   color: red; display: grid;  grid-template-rows: 8% auto ;	 padding: 0px; 	}
+                #galleryHeader	{	 background: #0b3d2e; color: red;  		display: grid; 		 grid-template-columns: 25% auto ;	}
+                    #galleryImage	{  background: #0b3d2e; 	padding: 0px; margin: 1px auto; }
+                        #galleryImage	img { width: 100%;   HEIGHT: AUTO; 		}
+                    #galleryfilters	{  background: #0b3d2e; 	padding: 10px;  padding-top: 25px;  font-weight: bold;
+                                         display: grid; 		 grid-template-columns: 20% 20% 20% 20% auto ; grid-gap: 5px; 
+                    }
+                        .galleryFilterMenu { background: #0b3d2e; padding: 2px 0px ; text-align: center; color: #68a30c; } 
+                        .galleryFilterMenu:hover { background: #a7c847; } 
+                        .activeGalleryFilter		{	background: #a7c847;  color: white; font-style: bold;  border-bottom: 5px solid #6eb506;	}	
+                    
+                #galleryBody	{	color: red; 	padding: 0px;	margin: 0px auto; 	height: auto; 	}					
+                
+                #galleryBodyContent {	background-color: #0b3d2e; 		color: white;	  font-weight: bold; 
+                                        z-index: 2;	  	width: 100%;		  padding: 0px;		margin:14px 0px; 		text-align: center;
+                }
+                    .imageContainer  { 	display: inline-block;   position: relative;  width: 350px;   padding: 3px;   margin: 2px auto;  border-radius: 10px; }
+                    .image { 			width: 100%;  height: 235px;	  border-radius: 10%; }
+                    .imageOverlay {  	position: absolute;  bottom: 0;  	left: 0;  right: 0;  background-color: #30b733;  overflow: hidden;  width: 99%;
+                                height: 0;		 opacity: 80%;   /*		-webkit-transform: scale(0);  -ms-transform: scale(0);  transform: scale(0);	*/
+                                -webkit-transition: .5s ease;  transition: .5s ease;
+                    }
+                    .imageContainer:hover .imageOverlay {	 width: 100%;  height: 100%;	  border-radius: 10%; 	}
+                    .imageContainer:hover .imageOverlayScale {  -webkit-transform: scale(1);  -ms-transform: scale(1);  transform: scale(1);}
+                    .text {  color: white;  font-size: 20px;  padding: 20px;   padding-top: 30px;   text-align: center;  background-color: transparent;
+                    }					
+                        .text p{    font-size: 18px;  }
+            
+            /* Responsive layout  */
+            @media screen and (max-width: 768px) {
+                #galleryHeader	{ display: table;  }
+                
+                .imageContainer  { 	 width: 300px; 		}
+                    .text {   font-size: 18px; }					
+                        .text p{    font-size: 15px;  }
+                    
+            }
+            @media screen and (max-width: 480px) {
+                        #galleryfilters	{ 	padding: 7px; 		font-size: 0.8rem ;  grid-gap: 5px; }
+                    #galleryBody		{	display: block; margin: 5px; }	
+                        #galleryBodyContent {	display: block; margin: 5px auto;   top: 400px;		 }		
+                        .imageContainer  { 	display: block; width: 95%;  }	
+                    
+            }
+
+            
+            
+            
+            
+            
+            /*  		FOOTER		*/
+				#footbar {  overflow: hidden;  background-color: #333;}
+				/*
+				#footbar a {  float: left;  display: block;  color: #f2f2f2;  text-align: center;  padding: 14px 16px;  text-decoration: none;  font-size: 17px;}
+				#footbar a:hover {  background-color: #ddd;  color: black;}
+				#footbar a.active {  background-color: #04AA6D;  color: white;}
+
+				*/
+				.midParagraph {  font-size: 22px;   color: green!important; }
+				.smallParagraph {  font-size: 16px; color: green!important; }
+
+				.footbar { display: grid; display: grid; grid-gap: 5px; grid-template-columns: 50% auto ; }  /*   border-top: 2px  solid ; }  */
+				 .footerMenu{   text-align: center;  	color:  green!important;   	}
+				 .footerLinks{	color:  green!important;	margin: 10px 0 12px;	padding: 0;}
+				.footerLinks a{	display:inline-block;	line-height: 1.8;  font-weight:40;	font-size: 17px;text-decoration: none;	color:  inherit;}
+				.footerLinks a:before {  content: "|";  line-height: 1.8;  font-weight:30;  font-size: 20px;  left: 0;  color: green!important;  display: inline-block;  padding-right: 5px;}
+				.footerLinks .link-1:before {  content: none;}
+				.footerLinks a:hover {  background-color: #ddd;  color: black; padding-right: 10px; }
+
+				#footbarCopyright { text-align: left;  font-size: 18px;  }
+				#footbarLinks { text-align: right; color:  green!important;     }
+
+				.ServicesNav 	{	 margin-top: 20px;		}
+				.ServicesNav a {  text-decoration: none;    padding: 1rem;  font-size: 16px; display: inline-block;  color: green!important; }
+
+				/* Responsive layout  */
+				@media screen and (max-width: 992px) {
+					#footbarLinks { text-align: left;  }
+
+					.ServicesNav 	{	 margin-top: 10px;		}
+						.ServicesNav a {  text-decoration: none;    padding: 1rem;  font-size: 16px; display: block;  color: green!important; }
+					
+					.footerLinks{	color:  green!important;	margin: 5px 0 2px;	padding: 0;}
+						.footerLinks a{	display:inline-block;	line-height: 1.4;  font-weight:25;	font-size: 17px;text-decoration: none;	color:  inherit;}
+						.footerLinks a:before {  content: "|";  line-height: 1.4;  font-weight:25;  font-size: 20px;  left: 0;  color: green!important;  display: inline-block;  padding-right: 5px;}
+
+				}
+				
+				@media screen and (max-width: 480px) {
+					.footerLinks a{	display:inline-block;	line-height: 1.3;  font-weight:20;	font-size: 15px;text-decoration: none;	color:  inherit;}
+					.footerLinks a:before {  content: "|";  line-height: 1.3;  font-weight:20;  font-size: 15px;  left: 0;  color: green!important;  display: inline-block;  padding-right: 5px;}
+					#footbarCopyright P { 	line-height: 1.3;  font-weight:20;	font-size: 15px;	}	
+  
+				}
+
+		
+
+				 /*		ABOUT US		*/					
+			#aboutUsDiv				{	background: white;	padding: 10px;	 display: grid; grid-gap: 5px; grid-template-columns: 50%  auto ;	}
+			#aboutUsCaptionDiv				{		background: white;	 position: relative ;  }
+				.aboutUsCaption				{		 position: absolute ; padding: 0px; margin: 0px;	color: green ;}
+					#aboutUsCaption1		{		z-index: 2 ; left: 0px; top: 20px; width: 320px;   height: 260px; border-radius: 100px;  border: 15px solid white; }
+					#aboutUsCaption2		{		z-index: 3 ;  right:20px; bottom: 0px;  width: 350px; height: 430px;  border-radius: 100px;  border: 15px solid white; }
+					#aboutUsCaptionP		{		z-index: 4 ; right: 20px; top: 20px;  font-size: 2.7em; text-align: right ; }
+			#aboutUsContentDiv				{	background: white;	color: green;padding: 10px; margin: 0px; width: 98%; }
+				#aboutUsHeaderSmall	 img 	{	width: 30px; height: auto; align-items: center;   text-align: center; 	}
+				#aboutUsHeaderSmall  span { padding: 2px;  background-color: white ;  text-align: center ; font-size: 1.2rem;  font-weight: bold;  color: #0b3d2c;}
+				#aboutUsHeaderBig 		{	padding: 0px;  margin: 0px;  font-size: 3rem; color: #0b3d2c;	}
+			
+				#aboutUsParagraph		{	padding: 10px;  padding-top: 30px;  margin: 10px;  font-size: 1.2rem;	}
+				
+				#aboutUsCEODiv			{	background: white; color: green; 	padding: 10px; margin: 0px; width: 95%;
+											display: grid; grid-gap: 5px; grid-template-columns: 50%  auto ;
+										}
+					#aboutUsCEO			{	display: grid; grid-gap: 5px; grid-template-columns: 35%  auto ;	}
+					/*	#aboutUsCEOCaption	{		}		*/
+						#aboutUsCEOCaption	img  {	width: 90px; height: auto; align-items: center;  border-radius: 20%;  text-align: center; 	}
+					/* #aboutUsCEOName		{		}
+						#aboutUsCEOName	h3	{		}
+						#aboutUsCEOName	p	{		}
+					*/ 
+					#aboutUsGetInTouch		{	background-color: transparent;    	 }
+						.socialMedia1  {	margin-top: 10px; margin-left: 25px; text-align:center;  }		
+						.socialMedia1  img { height: 35px;  margin-right: 15px; border-radius: 50%;    position: relative;}
+						.socialMedia1 img:hover  {    /* height: 50px;  z-index: 5; */ transform: scale(1.4);   	    transition: 200ms ease-in;   }
+						
+						
+						.tooltip {  position: relative;  display: inline-block;  }
+						.tooltip .tooltiptext { visibility: hidden;  width: 200px;  background-color: black;  color: green;  text-align: center;  border-radius: 6px;  
+												padding: 5px ;		position: absolute;  z-index: 1;  top: 120%;  left: 50%;  margin-left: -105px;		}
+						.tooltip .tooltiptext::after {  content: "";  position: absolute;  bottom: 100%;  left: 50%;  margin-left: -5px;  border-width: 5px;  border-style: solid;
+														border-color: transparent transparent black transparent; 		}
+						.tooltip:hover .tooltiptext {  	visibility: visible;   transition: 1s ease-in;   }
+				
+
+			/* Responsive layout  */
+			@media screen and (max-width: 1232px) {
+					#aboutUsCaptionP		{	 top: 25px;  font-size: 2.4em; text-align: right ; }
+						
+			}
+
+			@media screen and (max-width: 992px) {
+				#aboutUsDiv				{	 display: table;  background-color: transparent; 		}
+				
+					#aboutUsCaptionDiv			{		height: 500px; }
+						#aboutUsCaption1		{		 left: 70px; top: 5px; width: 470px ; height: 340px;  }
+						#aboutUsCaption2		{		 right:20px; top: 50px;  width: 370px ; height: 480px;  }
+						#aboutUsCaptionP		{		 left: 120px; top: 350px;  font-size: 2.5em; text-align: left ;   }
+						
+						
+						
+			}
+			
+			@media screen and (max-width: 768px) {					
+				#aboutUsDiv	, .aboutUsCaption		{	  display: none;   }								
+				
+			}
+			@media screen and (max-width: 480px) {
+						#aboutUsCaptionDiv	, #aboutUsContentDiv	 {	 background-color: white;  mix-blend-mode: normal;  }	
+						#aboutUsCaptionDiv	{	position: static ; 	}	
+						.aboutUsCaption				{	 position: relative ; }
+							#aboutUsCaption1, #aboutUsCaption2		{	  display: none;   }
+							/*	#aboutUsCaption2		{	 right:0px; top: 20px;  width: 400px; height: 430px;  border-radius: 100px;  border: 15px solid white; }	*/
+							
+							#aboutUsCaptionP span {      display: none;    }
+								/* 	#aboutUsCaptionP:after {     text-align: left ;   font-size: 0.8em;  content: "10+ Years of Experience"; }	*/
+
+						
+						#aboutUsHeaderBig 		{	 font-size: 2rem;	}
+						#aboutUsParagraph	{	 font-size: 1rem ;  	  padding-top: 7px;  }
+			
+				#aboutUsCEODiv			{	display: table; 	width: 99%;  background-color: transparent;  }
+							
+			}
+
+
+
+			/*		SERVICES 		*/					
+		#servicesDiv					{	background-color: white; color: #0b3d2c; padding: 10px; 								}
+		#servicesHeaderDiv			{	display: grid; grid-gap: 5px; 		grid-template-columns: 50% auto ;		}
+			/*	#servicesHeader			{		}	*/
+			#servicesHeader 	 {	padding-left: 10px;font-size: 1.2rem; font-weight: bold; align-items: center;  color: #0b3d2c;	}
+				#servicesHeaderSmall img  {	width: 30px; height: auto; align-items: center;   text-align: center; 	}
+				#servicesHeaderSmall  span { padding: 2px;  font-size: 1.2rem;  font-weight: bold; background-color: white ;  text-align: center ; }
+				#servicesHeaderBig 		{	padding: 0px;  margin: 0px;  font-size: 3rem; 	}
+		
+			#servicesParagraph		{	padding: 10px;  padding-top: 50px;  margin: 5px;  font-size: 1.2rem;	}
+		
+		#servicesContentDiv			{  padding: 0px;  margin: 10px;  	 background-color: white ;	
+										display: grid; grid-gap: 5px; 		grid-template-columns: 25% 25% 25% auto ;
+									}
+			.servicesContent 		{	 margin:  5px ;	 PADDING:  0px ; background-color: transparent ;	color: white ;		
+										height: 350px; 	border-radius: 40px; 	position: relative ; 
+									}
+				.servicesContentHeading{  width: 93%; 	padding: 5px; text-align: center;  border-radius: 30px 30px 0px 0px;  position: absolute ; top: 0px;													background-color: #30b733;	 opacity: 80%; 	color: black ;   	margin: 10px;
+										 font-size: 1.9rem; 
+										}
+				.servicesContentBody	{	margin:  10px ; PADDING:  10px;  position: absolute ; bottom: 0px; border-radius:  0px 0px 30px 30px;
+											 visibility: hidden;  background-color: #30b733;	 opacity: 80%; 
+				}	
+				
+				.contactUsbutton {  	background-color: #04AA6D; /* Green */  border: none;  color: white;  padding: 7px;  text-align: center;
+							margin:  5px auto;  width: 70%; opacity: 1; text-decoration: none;  display: inline-block;     cursor: pointer;
+					}
+				.contactUsbutton	a{  text-decoration: none;  }
+
+		
+				.servicesContent:hover .servicesContentBody {  	visibility: visible;   transition: 1s ease-in;   }
+					.servicesContent img{  width: 100%; height:100%; padding: 10px;  border-radius: 40px; 	 }
+
+		/* Responsive layout  */
+		@media screen and (max-width: 1232px) {
+			#servicesContentDiv			{  grid-template-columns: 33% 33% auto ;			}
+			
+		}
+
+		@media screen and (max-width: 992px) {		
+			#servicesHeaderDiv		{	display: table; 		}
+			#servicesParagraph		{	   	  padding-top: 10px;  }
+
+			#servicesContentDiv			{  grid-template-columns: 33% 33% auto ;			}
+				.servicesContentHeading{  width: 93%;  font-size: 1.7rem;  }
+				.servicesContentBody	{ font-size: 0.95em ;		} 
+			
+		}
+		@media screen and (max-width: 768px) {					
+			#servicesContentDiv			{  grid-template-columns: 50% auto ;			}
+								
+		}
+		@media screen and (max-width: 480px) {
+				#servicesHeaderBig {	 font-size: 2rem ;  	}
+				#servicesParagraph	{	 font-size: 1rem ;  	  padding-top: 7px;  }
+			#servicesContentDiv		{	display: table; 		}
+				.servicesContentHeading{  width: 95%; 	}
+		}
+					
+		
+		 /*		EXPERTISE / EXPERIENCE		*/					
+	#expertiseDiv								{	background: white; padding: 10px;	 display: grid; grid-gap: 5px; grid-template-columns: 60%  auto ;	}
+		/*	#expertiseContentDiv					{		}	*/
+			#expertiseContentHeaderDiv			{	background: transparent; color: #2a7d2e;  padding: 5px; 	}
+				#expertiseContentHeaderDivH 	 {	padding-left: 10px;font-size: 1.2rem; font-weight: bold; align-items: center;  color: #0b3d2c;	}
+				#expertiseContentHeaderDivH img  {	width: 30px; height: auto; align-items: center;   text-align: center; 	}
+				#expertiseContentHeaderDivH  span { padding: 2px;  background-color: white ;  text-align: center ; }
+			/*	#expertiseContentBodyDiv			{		}	*/
+				#expertiseContentBodyDiv	h2	{	padding-left: 20px;  margin: 1px; 	
+													text-align: left;	background: transparent;  color: #0b3d2c;  font-size: 3em ; 	
+												}
+				#expertiseContentBodyDiv	p	{	padding: 8px;  margin: 2px; text-align: left;	text-indent: 40px ;
+													background: transparent;  color: #000;  font-size: 1.2rem ; 	 
+				}
+					
+			#expertiseContentSkillsDiv			{	 padding: 5px;  display: grid; grid-gap: 5px; grid-template-columns: 33% 33% auto ;	}
+				.skillsDiv						{	 display: grid; grid-gap: 5px; grid-template-columns: 30%  auto ;	color: #0b3d2c;	}	
+					.skillsIconDiv				{	background: transparent; align-items: center;   text-align: center;	}
+						/*	.skillsIconDiv	img		{		}							*/
+					.skillsContentDiv			{	background: white; 	padding: 2px;  margin: 0px; }
+						.skillsContentDiv	h2	{	padding: 0px;  margin: 0px; 	}
+						.skillsContentDiv	p	{	padding: 0px;  margin: 0px; 	}
+					
+			
+		#expertiseGalleryDiv	{	background: transparent; 	}
+			#expertiseGalleryDiv img	{ width: 48%;  padding: 5px; border-radius: 50px 0px;  height: auto;  float:left;  }
+		#expertiseGalleryDiv:before, #expertiseGalleryDiv:after	{	clear: both; display: table; }
+
+		
+		/* Responsive layout  */
+		@media screen and (max-width: 1232px) {
+					
+		}
+
+		@media screen and (max-width: 992px) {
+			
+		}
+		@media screen and (max-width: 768px) {
+			#expertiseDiv					{	 display: table;	}
+			#expertiseContentBodyDiv	p	{	  padding-top: 10px ; 	 	}
+				
+				
+		}
+		@media screen and (max-width: 480px) {
+				#expertiseContentBodyDiv	h2	{	font-size: 2em ; 	}
+				#expertiseContentBodyDiv	p	{	  font-size: 1rem ; 	 	}
+				
+				#expertiseContentSkillsDiv				{	 display: table;	width: 97%; }	
+						.skillsContentDiv				{ width: 100%;  }
+				.skillsContentDiv	h2	{	 font-size: 1rem ;  	}
+				.skillsContentDiv	p	{	 font-size: 1rem ;  	}
+					
+		}
+
+
+        				/*			ABOUT US	*/
+			#contentDiv		{	  background-color: blue; color: red;  background-image: url("downloads/HotelCarPark2.jpg");	 }
+				#introDiv		{	 background: transparent; color: green;   padding: 15px; 	}	
+					#introDiv	h2	{	 text-align: center;	color: #EEE; }	
+				
+					#intro		{	 background: transparent; color: green;   padding: 15px; 	 display: grid; 		 grid-template-columns: 83% auto ;}	
+						#intro  img { height: 195px;  margin: 5px auto;     }
+						#introContent			{	padding: 4px 7px;  background: #30B733; opacity: 0.8 ; color: #EEE;  border-radius: 20px 20px 0px 20px; 	}
+							/*		#introContent	h2		{		}		*/
+							#introContent	P	{ text-indent: 30px; 	padding: 1px; margin: 2px; 	font-size: 1.4rem ;  }	
+				#missionVisionValues		{	 padding: 15px ; background: transparent; color: WHITE;  display: grid; 		 grid-template-columns: 33% 33% auto ;		}
+					#mission   {	background: transparent; border-right: 1px solid green; 	padding: 5px; }
+					#vision   {	background: transparent; 	 border-right: 1px solid green;  padding: 5px; }
+					#values  {	background: transparent; 	padding: 5px; }
+						.missionVisionValuesHeader 		{	text-align: center; 			}
+						.missionVisionValuesHeaderSpan	{	font-weight: bold ; color: WHITE; 		}	
+						.missionVisionValuesImg			{	margin-top: 10px; margin-left: 25px; text-align:center;  }		
+						.missionVisionValuesImg  img { height: 105px;  margin-right: 15px; border-radius: 50%;    }
+						.socialMedia img:hover  {    /* height: 50px;  z-index: 5; */ transform: scale(1.4);   	    transition: 200ms ease-in;   }
+						
+						.missionVisionValuesContent		{	background-color: transparent; 	}	
+							.missionVisionValuesContent	P	{ text-indent: 20px; 	padding: 1px; margin: 2px; 	color: #EEE; }	
+			
+					
+				/* Responsive layout  */
+			@media screen and (max-width: 1232px) {
+						
+			}
+
+			@media screen and (max-width: 992px) {		
+				#introContent	P	{  	font-size: 1.3rem ;  }
+
+				
+			}
+
+			@media screen and (max-width: 768px) {					
+				#teamMembersDiv		{		  display: table; 	}
+				#intro			{	  display: table;		}
+					#intro  img { display: none; }
+					#introContent			{	padding: 4px;   border-radius: 20px 20px  20px 0px; 	}
+						#introContent::before { content: url("downloads/AGardensLogosmall.jpg")  /* /"A-Gardens Cambridge" */ ;
+												display: block;  width: 230px;  height: 230px;  overflow: hidden; 
+												align-items: center;  text-align: center;	 	/*  content: "A-Gardens Cambridge"; */
+												position: relative;  top: -25px; ;  border-radius: 50% 0px; 
+						}
+				
+					#missionVisionValues		{	display: table; 		 	 padding: 5px ; 		}
+					#mission  , #vision , #values {	 border: 0px; border-left: 5px solid green; 	margin: 10px;  }
+					
+					.missionVisionValuesImg			{	 float: left; 	  width: 17%;   padding: 5px;    
+														 margin: 5px auto;  align-items: center; text-align: center;	
+					}
+						.missionVisionValuesImg  img { height: 65px;    border-radius: 50%;     padding: 5px;   }						
+					.missionVisionValuesContent		{	  float: right;    width: 80%;;  }
+						
+						.missionVisionValuesContent	P	{  display: inline-block; 	padding: 1px; margin: 2px; 	color: #EEE; }	
+			
+					 #mission:after  , #vision:after , #values:after {  content: ""; clear: both; display: table; }
+			
+			}
+			@media screen and (max-width: 480px) {
+					#introContent::before { 	position: relative;   width: 230px;  top: -25px;  left: 65px;  border-radius: 50px 50px 0px 0px; 											
+					}
+					#introContent	P	{  	font-size: 1.1rem ;  }
+
+						}
+	
+                         /*		TESTIMONIAL		*/
+			
+			.mySlides {			display: none;  background: white;  border-radius: 20px;  	margin-left: 100px;  width: 85%; }
+			.mySlides img {		vertical-align: middle;  width: 125px; height: 140px; display: inline-block;	}
+			.slideContent {		 display: inline-block;	background: #30B733;		color: #f2f2f2;  font-size: 15px;  padding: 5px;		margin: 2px;  
+								text-align: left;     text-indent: 30px;	width: 83%;  vertical-align: middle; border-radius: 30px 30px 30px 0px ; }
+
+			/* Slideshow container */
+			#testimonialContainer 		{ 	max-width: 100%;  position: relative;  margin: auto;  padding: 15px;   background: white;}
+				#testimonialContainer h2{ 	text-align: center;	color: green; 	}
+				
+			/* The dots/bullets/indicators */
+			.dot {  height: 15px;  width: 15px;  margin: 0 2px;  background-color: green;  border-radius: 10px;  display: inline-block;  transition: background-color 0.6s ease;}
+			.activeDot {  background-color: #30B733;  width: 30px;}
+			
+			/* Fading animation */
+			.fade {  animation-name: fade;  animation-duration: 1.5s;}
+			@keyframes fade {  from {opacity: .4}   to {opacity: 1}}
+		
+							/* Responsive layout  */
+			@media screen and (max-width: 1232px) {
+						
+			}
+
+			@media screen and (max-width: 992px) {		
+				.mySlides {		border-radius: 15px;  	margin-left: 20px;  width: 95%; }
+					.mySlides img {		 width: 110px; height: auto; 	}
+				.slideContent {		 font-size: 14px;  padding: 5px;	margin: 2px;  	 text-indent: 20px;		width: 80%;  }
+		
+			}
+
+			@media screen and (max-width: 768px) {	
+				
+				.mySlides {		border-radius: 15px;  	margin-left: 20px;  width: 95%; }
+					.mySlides img {		 width: 95px; height: auto; 	}
+				.slideContent {		 font-size: 12px;  padding: 5px;	margin: 2px;  	 text-indent: 20px;		width: 75%;  }
+
+			}
+			@media screen and (max-width: 480px) {
+				#testimonialContainer 		{ 	padding: 5px;   }
+					.mySlides {		border-radius: 10px;  	margin-left: 10px;  width: 98%; }
+						.mySlides img {		 width: 75px; height: auto; 	}
+					.slideContent {		 font-size: 12px;  padding: 5px;	margin: 2px;  	 text-indent: 20px;	width: 78%;  }
+			}
+			
+             /*  AWARD BANNER  */
+				#awardBannerDiv	{	background-color: #0b3d2c ;  color: white;  padding: 0px;  margin: 50px 0px; 	height: 300px; 
+									padding-left: 50px;  display: grid; 		 grid-template-columns: 18% 18% 18% auto ;	border-radius: 150px 0px 0px 150px; 
+				}
+				.awardBanner	{	padding: 6px; margin: auto; text-align: center; align-items: center; border-right: 2px white solid; 	}
+					.awardBanner svg {  background-color: #eeeeee;  border-radius: 20px;	height: 50px; 	width: 50px;  padding: 5px;  margin: 5px; }
+					.awardBannerContent				{	background-color: transparent; 	}
+						.numberPercentageWraper		{	font-size: 3.23rem ;	font-weight: 59; 	font-style: bold;   }
+						/*	.numberPercentage		{		}	*/
+						.awardBannerTitle			{	font-size: 1.5rem ;		font-style: bold;	}
+					
+					#awardBannerServicesDiv				{	background-color: red ;  color: white; 	}
+					#awardBannerMembersDiv				{	background-color: purple ;	}
+					#awardBannerAwardsDiv				{	background-color: blue ;	}
+					#awardBannerPhotoDiv				{		margin:  0px;  	padding:0px;	overflow: hidden;	}
+						#awardBannerPhotoDiv	img		{	width: 100%;  	height: auto;  margin:  0px;  	padding:0px; 	border-radius: 200px 0px 0px 200px;  /*	border-radius: 50%; 	*/		}
+				
+								/* Responsive layout  */
+			@media screen and (max-width: 1232px) {
+						
+			}
+
+			@media screen and (max-width: 992px) {		
+				
+					.numberPercentageWraper		{	font-size: 2.4rem ;	font-weight: 50; 	   }
+					.awardBannerTitle			{	font-size: 1.3rem ;		font-style: bold;	}
+				
+			}
+
+			@media screen and (max-width: 768px) {	
+				#awardBannerDiv	{	margin: 25px 0px; 	height: 250px; 		padding-left: 50px;  border-radius: 130px 0px 0px 130px; 		}
+				.awardBanner	{	padding: 4px;  	}
+					.awardBanner svg {   border-radius: 15px;	height: 40px; 	width: 40px;  padding: 5px;  margin: 5px; }
+					
+					
+					.numberPercentageWraper		{	font-size: 1.8rem ;	font-weight: 45; 	   }
+					.awardBannerTitle			{	font-size: 1.2rem ;		font-style: bold;	}
+				
+					#awardBannerPhotoDiv	img		{	width: 100%;  	height: 100%;  border-radius: 120px 0px 0px 120px;  		}
+				
+			}
+			@media screen and (max-width: 480px) {
+				#awardBannerDiv	{	  display: table; 		padding: 0px; 	margin: 20px;   border-radius:  0px; 	}
+				.awardBanner	{	  border-right: 0px ;  	 	}
+					#awardBannerPhotoDiv	img		{	width: 100%;  	height: 100%;  border-radius:  0px;  		}
+				
+			}
+
+				
+             /*		THE TEAM		*/
+			
+			/* the team container */
+			#teamDiv {  max-width: 100%;  height: 30%;   margin: auto;  padding: 5px;	padding-bottom: 35px;   background-color: #2a7d2e; 
+						background: green; 		background-image: url("downloads/AfterTurfInstalation.jpg");  	}
+				#teamDiv h2{ 	text-align: center;	color: white; 	font-style: bold; font-size: 1.8rem; }
+				.teamDivP	{ text-indent: 30px; 	padding: 5px; padding-left: 20px;  margin: 0px; 	font-size: 1.4rem ;	 width: 95%; 	color: white; 	}	
+				#teamMembersDiv		{		color: gray;	background: transparent;  display: grid; 	padding: 0px  ; 	
+										grid-gap: 2px;  	grid-template-columns: 20% auto ;		/*	*/
+				}	
+				.teamMemberCaptionDiv	{		padding: 0px; 			}
+				.teamMemberCaptionDiv	img{		width: 100%;  		margin:5px; 	border-radius: 200px 0px 0px 200px;  /*	border-radius: 50%; 	*/					}
+				.teamMemberCardDiv	{	background: #0b3d2c; opacity: 0.8; 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.8);  margin: 5px;  	padding:5px;	}
+				
+					.teamMemberName{ padding: 0px; background: transparent;  color: WHITE!important; 	font-style: bold; font-size: 1.7rem!important; }	
+						.teamMemberMessage { width: 100%; 	color: gray!important;  font-size: 1.2rem!important; text-indent: 15px; 	}
+						.span{ padding: 3px;  color: white;   font-size: 1.2rem!important; }	
+					 .teamMemberCardDiv	P	{ 	padding: 0px; padding-left: 10px;  margin: 2px; 	font-size: 1rem ;		color: white; 	}	
+					
+					.teamMemberCardSMDiv  {	margin-top: 10px; text-align:center;  }		
+						.teamMemberCardSMDiv  img { height: 40px; margin:20px;  margin: 0px; border-radius: 50%;    display: inline-block; position: relative;}
+						.teamMemberCardSMDiv img:hover  {    transform: scale(1.6);   	    transition: 200ms ease-in;   }
+						
+						.teamMemberCardSMDivtooltip {  position: relative;  display: inline-block;  margin: 7px ;	background: transparent; }
+						.teamMemberCardSMDivtooltip .tooltiptext { visibility: hidden;  width: 210px;  background: black;  color: #fff;  text-align: center;  border-radius: 6px;  
+												padding: 5px ;		position: absolute;  z-index: 1;  top: 130%;  left: 50%;  margin-left: -105px;		}
+						.teamMemberCardSMDivtooltip .tooltiptext::after {  content: "";  position: absolute;  bottom: 100%;  left: 50%;  margin-left: -5px;  border-width: 5px;  border-style: solid;
+														border-color: transparent transparent black transparent; 		}
+						.teamMemberCardSMDivtooltip:hover .tooltiptext {  	visibility: visible;   transition: 1s ease-in;   }
+					
+					
+				/* Responsive layout  */
+			@media screen and (max-width: 1232px) {
+						
+			}
+
+			@media screen and (max-width: 992px) {		
+				
+				
+			}
+
+			@media screen and (max-width: 768px) {					
+				#teamMembersDiv		{		  display: table; 	}
+					.teamMemberCaptionDiv	img{	width: 60%;		border-radius: 50%;  margin:  5px auto; padding: 0px; 				}
+					.teamMemberCaptionDiv  {    margin: 2px auto;  align-items: center; text-align: center;						  	}
+					.teamMemberCardDiv	{	  margin: 0px;  align-items:center;	}
+				
+			}
+			@media screen and (max-width: 480px) {
+				/*		#teamMembersDiv		{		  display: table; 	}												*/
+				/*		.teamMemberCaptionDiv	img{			border-radius: 50%; padding: 0px; 				}		*/
+					.teamMemberCardDiv	{	  margin: 0px;  	}
+				
+			}
+		
+            /*  WHY US */
+			
+			#whyUsDiv						{ 	display: grid; display: grid; grid-gap: 5px; grid-template-columns: 65% auto ; width: 100%;} 
+			#whyUsCaptionDiv				{	HEIGHT: 100vh; margin-top: 90px;  background-image: url("downloads/sampleImage.png"); background-repeat: no-repeat;  background-size: 99% 100%;				}
+			#whyUsContentDiv				{	padding: 10px; background: transparent;						}
+				#whyUsContentDiv h2			{	text-align: left;		padding: 0px 10px; 	font-size: 3rem; color: #0b3d2c;		 		}
+				#whyUsContentDiv p			{	text-align: left; padding: 5px; text-indent: 20px ; 		}
+				#whyUsContentChoicesDiv		{	padding: 5px; display: grid; display: grid; grid-gap: 10px; grid-template-columns: 50% auto ; width: 100%; background: transparent;	}
+				.whyUsContentChoice			{	background: transparent;		  padding: 0px; 	  margin: 0px; 										}
+					.whyUsContentChoice	 h3			{	text-align: center;		padding: 0px;	 margin: 0px; 	font-size: 2rem; 	}
+						.whyUsContentChoiceH 	img	{ width: 45px; 	}
+					.whyUsContentChoice	 p			{	text-align: left; 		padding: 0px;    margin: 0px; 	 	text-indent: 20px ; 		}
+				
+			/* Responsive layout  */
+			@media screen and (max-width: 1232px) {
+				.whyUsContentChoice	 h3			{	 	font-size: 1.5rem; 	}
+						
+			}
+
+			@media screen and (max-width: 992px) {		
+				#whyUsDiv						{ 	display: table;	}
+				#whyUsCaptionDiv			{	margin-top: 25px; aspect-ratio: 3/4; 	margin: 10px auto;  }
+					#whyUsContentDiv h2			{	font-size: 2.5rem;		 		}					
+				
+			}
+
+			@media screen and (max-width: 768px) {					
+				#whyUsDiv						{ 	display: table;	}
+					#whyUsCaptionDiv			{	margin-top: 5px; 	}					
+					#whyUsContentChoicesDiv		{	display: table; 		}
+					
+			}
+			@media screen and (max-width: 480px) {
+				
+			}
+
+            	/*		FAQs		*/
+			#FAQSDiv			{	padding: 10px; background: black;	color: white;  display: grid; display: grid; grid-gap: 5px; 
+									grid-template-columns: 40% auto ; width: 100%;	
+								}
+			/*	#FAQSContentDiv		{		}	*/
+				#FAQSOtherQuestionsDiv				{	padding: 5px; margin: 50px 10px; background: #f0fff0;	color: #0b3d2c;	border-radius: 50px; 			}
+				#FAQSOtherQuestionMarkMainDiv		{	padding: 10px;  display: grid; display: grid; grid-gap: 5px; 
+														grid-template-columns: 40% auto ; width: 100%;	 background: transparent;
+													}
+				/*	#FAQSOtherQuestionMarkDiv			{		}	*/
+					#FAQSOtherQuestionMarkDiv  img { height: 105px;  margin: 5px; border-radius: 50%; 	   }
+						
+				/*	#FAQSOtherQuestionMarkContentDiv	{		}	*/
+					#FAQSOtherQuestionMarkButtonDiv		{	margin: 10px auto; align-items: center;  text-align: center; background-color: transparent; 	}	
+					.FAQsbutton {  	background-color: #04AA6D; /* Green */  border: none;  color: white;  padding: 10px;  text-align: center;
+									margin: 10px auto;  width: 90%; text-decoration: none;  display: inline-block;  font-size: 16px;  margin: 4px 2px;  cursor: pointer;
+							}
+					.FAQsbutton1 {border-radius: 24px;}
+						.FAQsbutton	a{  text-decoration: none;  }
+
+				
+
+			#FAQSQuestionsDiv	{	background-color: transparent ; 	}
+
+			
+			/* Responsive layout  */
+			@media screen and (max-width: 1232px) {
+						
+			}
+
+			@media screen and (max-width: 992px) {		
+				
+				
+			}
+
+			@media screen and (max-width: 768px) {					
+				#FAQSDiv			{	display: table; }	
+			}
+			@media screen and (max-width: 480px) {
+				
+			}
+
+            	/*		ACCORDION  */
+			.accordion {	padding: 15px;  background-color: transparent; }
+			.accordionItem {	margin: 5px auto;}
+			.accordionItem .accordionTitle {	position: relative;	display: block;	padding: 13px 60px 15px 13px;	margin-bottom: 2px;	color: #0b3d2c;
+													font-size: 25px;	text-decoration: none;	background-color: #eaeaea;	border-radius: 3px;	-webkit-transition: background-color 0.2s;
+													transition: background-color 0.2s;  cursor: pointer;
+												}
+			.accordionItem .accordionTitle:hover {	background-color: #e5e4e4;	transition: all 0.5s ease-out;}
+			.accordionItem .accordionActive {	background-color: #e5e4e4;}
+			
+			.accordionItem .accordionTitle .accordionArrow {	position: absolute;	top: 13px; right: 10px;	display: inline-block;
+										vertical-align: middle;		width: 30px;	height: 30px;	text-align: center;	color: #fff;
+										line-height: 30px;			font-size: 20px;font-weight: 700;	margin-right: 5px;	background-color: #c9c9c9;
+										border-radius: 50%;			-webkit-transition: all 0.2s ease-out;	transition: all 0.2s ease-out;
+									}
+			.accordionItem .accordionRotate {	transform: rotate(225deg);}
+			.accordionItem .accordionContent {	padding: 30px;	margin-bottom: 2px;	font-size: 14px;	display: none;	background-color: #f3f3f3; color: #0b3d2c; }
+			.accordionItem .accordionArrowItem {	font-weight: 700;}
+			
+			
+            
