@@ -331,7 +331,7 @@
 
             	/*  WHY US */
 			#whyUsDiv						{ 	display: grid; display: grid; grid-gap: 5px; grid-template-columns: 65% auto ; width: 100%;} 
-			#whyUsCaptionDiv				{	HEIGHT: 100vh; margin-top: 90px;  background-image: url("downloads/sampleImage.png"); background-repeat: no-repeat;  background-size: 99% 100%;				}
+			#whyUsCaptionDiv				{	HEIGHT: 100vh; margin-top: 90px;  background-image: url("downloads/sampleImageManWhiteBG.jpg"); background-repeat: no-repeat;  background-size: 99% 100%;				}
 			#whyUsContentDiv				{	padding: 10px; background: transparent;						}
 				#whyUsContentDiv h2			{	text-align: left;		padding: 0px 10px; 	font-size: 3rem; color: #0b3d2c;		 		}
 				#whyUsContentDiv p			{	text-align: left; padding: 5px; text-indent: 20px ; 		}
