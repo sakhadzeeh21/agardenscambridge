@@ -105,8 +105,8 @@
 					background-color: var(--main-dark-grey);    padding-left: 20px;    font-size: 15px;    transition: .1s var(--main-ease);  display: block; 
 				}
 				
-				.formButtons {	align-items: center;  padding: 3px;  	}
-					.formButtons button{	width: 30%; padding: 5px; margin: 4px ;   border-radius: 10px; background: #dfa ; color: green; float: right; font-size: 1.2rem; 	}
+				.formButtons {	align-items: center;  padding:5px;  	}
+					#sendMessage {	width: 30%; padding: 10px; margin: 5px ;   border-radius: 10px; background: #dfa ; color: green; float: right; font-size: 1.2rem; 	}
 					
 			
                     		/*		CONTACT US BANNER		*/
@@ -208,6 +208,8 @@
 
 				*/
 				.midParagraph {  font-size: 22px;   color: green!important; }
+					.midParagraph a { text-decoration: none; 		}
+				
 				.smallParagraph {  font-size: 16px; color: green!important; }
 
 				.footbar { display: grid; display: grid; grid-gap: 5px; grid-template-columns: 50% auto ; }  /*   border-top: 2px  solid ; }  */

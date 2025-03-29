@@ -12,48 +12,10 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="jquery-3.7.0.min.js"></script>		<!--			-->
 		
-		<script> 		//Button ID:		all		gardenCare		fenceManagement		shadeCare			wasteDisposal
+		<script  src="galleryFilter.js"> 		</script> 
 		
-			$(document).ready(function(){  		
-				$("#gardenCare").click(function()		{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
-															$("#gardenCare").addClass("activeGalleryFilter");
-															$(".imageContainer").hide().fadeOut(50)	;			
-															$(".gardenCare").show().animate({scale: '0.0'}, "fast");			//	$(".gardenCare,  .fenceManagement, .shadeCare").hide().fadeOut(50);	;		
-															$(".gardenCare").animate({scale: '1'}, "medium");					//	$(".gardenCare").show().fadeIn(100);	;																
-														});										
-				$("#manageFence").click(function()		{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
-															$("#manageFence").addClass("activeGalleryFilter");
-															$(".imageContainer").hide().fadeOut(50)	;			
-															$(".manageFence").show().animate({scale: '0.0'}, "fast");		
-															$(".manageFence").animate({scale: '1'}, "medium");				
-														});										
-				$("#shadeCare").click(function()		{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
-															$("#shadeCare").addClass("activeGalleryFilter");
-															$(".imageContainer").hide().fadeOut(50)	;			
-															$(".shadeCare").show().animate({scale: '0.0'}, "fast");		
-															$(".shadeCare").animate({scale: '1'}, "medium");
-														});										
-				$("#wasteDisposal").click(function()	{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
-															$("#wasteDisposal").addClass("activeGalleryFilter");
-															$(".imageContainer").hide().fadeOut(50)	;			
-															$(".wasteDisposal").show().animate({scale: '0.0'}, "fast");		
-															$(".wasteDisposal").animate({scale: '1'}, "medium");
-														});										
-				$("#all").click(function()				{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
-															$("#all").addClass("activeGalleryFilter");
-															$(".imageContainer").hide().fadeOut(50)	;			
-															$(".imageContainer").show().animate({scale: '0.0'}, "fast");		
-															$(".imageContainer").animate({scale: '1'}, "medium");
-														});										
-					
-			}); 
-				
-				
-		</script> 
+		<script src="includeHTML.js">		</script>
 		
-		
-		
-	
 	</head>
 	<body>
 
@@ -67,7 +29,7 @@
 							<a href="index.html">	Home		</a>
 							<a  href="aboutUs.html">	About Us	</a>
 							<a   href="services.html">	Services 	</a>
-							<a class = "activeMenu">	Gallery 	</a>
+							<a class = "activeMenu" href="">	Gallery 	</a>
 							<a href="contactUs.html">	Contact Us	</a>
 						</nav> 					
 				</div>
@@ -83,11 +45,11 @@
 							</div>
 							<div class="tooltip">	
 								<img src="downloads/sm-ig-original.jpg"/>  
-								<span class="tooltiptext">   <a  class = "smLinks"  href="https://www.instagram.com/" target="_blank"> instagram </a> </span> 
+								<span class="tooltiptext">   <a  class = "smLinks"  href="https://www.instagram.com/agcambs/?igsh=bW9tM2t4ZnZlNmZu#" target="_blank"> instagram </a> </span> 
 							</div>
 							<div class="tooltip">	
 								<img src="downloads/sm-facebook.png"  />   
-								<span class="tooltiptext"> <a   class = "smLinks" href="https://www.facebook.com/profile.php?id=61556980501020&mibextid=2Xzr3SNpE5dFVwDb" target="_blank">  facebook  </a>  </span>  
+								<span class="tooltiptext"> <a   class = "smLinks" href="https://www.facebook.com/allgardenz.cambs" target="_blank">  facebook  </a>  </span>  
 							</div>
 						</div>
 							
@@ -186,84 +148,12 @@
 				</div>
 				
 			</div>	
-			
-			
-		</div>
+						
+		</div>		
 		
-		
-		<div class="footerDiv">  
-			<div class = "footer w3-padding-top-16 w3-white"> 	<!--	<div> Subscribe			</div> 			-->
-				<div class = "w3-row" id=""> 
-					<div class = "w3-col w3-container  l4  "> 		
-							<h3  class = "footerMenu"> 	About		</h3>		<!-- WRAP TEXT AROUND LOGO 		-->
-							<div class = " " id = "aboutContent" > <!--	  style = " display: grid; grid-gap: 5px; grid-template-columns: 30% auto ;  " >		-->
-									<img src="downloads/AGardensInvoiceLogoSmall.jpg" class=" w3-margin-right" style=" width: 45%; 		">
-									<p style = "font-size: 16px; text-indent: 20px; color: green!important;" >  A-Garden Cambridge offers premium services
-									  ranging from the design and installation of many landscape construction projects including walkways, steps, 
-									  patios, planting, trans-planting, drainage systems, lawn renovation and installation,
-									  paver driveways, and excavation.</p> 
-									<p  style = "font-size: 16px; text-indent: 20px; padding: 10px; " >  
-										<!--	<i class="fa-brands fa-tiktok"  aria-hidden="true"></i>		-->
-										<i class="fa fa-tiktok" aria-hidden="true"></i>					
-										<i class="fa fa-instagram" aria-hidden="true"></i>					
-										<i class="fa fa-facebook" aria-hidden="true"></i>															
-										<!--	<i class="fa fa-whatsapp" aria-hidden="true"></i>		-->
-										<!--	<i class="fa fa-linkedin" aria-hidden="true"></i>		-->
-									</p>
-							</div> 
-							
-							
-					</div> 
-					<div class = "w3-col w3-container  l2 "> 		
-							<h3  class = "footerMenu" > 	Explore			</h3>
-							<p class = "midParagraph"  style = "margin-top: 40px; " > <a href="index.html" >Home</a>			  </p>
-							<p class = "midParagraph"> 			<a href="aboutUs.html"  >About Us</a> 			</p>
-							<p class = "midParagraph"> 			<a href="services.html" >Services</a>			 </p>
-							<p class = "midParagraph"> 			<a href="" class="link-1" >Gallery</a>				 </p>
-							<p class = "midParagraph"> 			<a href="contactUs.html">Contact Us</a>			 </p>
-					
-					</div> 
-					<div class = "w3-col w3-container  l3 "> 		
-							<h3 class = "footerMenu  "> 		Services	</h3> 
-								<nav class = "ServicesNav" >
-									<a href="#">	Gardens maintenance		</a>   
-									<a href="#">	House & Office Cleaning	</a>
-									<a href="#">	Fence Installation & Repairs 	</a>
-									<a href="#">	Rubbish Clearance, Waste Disposal	</a>
-									<a href="#">	Shade Installation & Disposal 	</a>
-									<a href="#">	Van Removals	</a>
-								</nav>
-					</div> 
-					<div class = "w3-col w3-container  l3 w3-transparent "> 		
-							<h3 class = "footerMenu" > 		Get in Touch		</h3>
-							<p class = "smallParagraph"  style = "margin-top: 40px; " >  <i class="fas fa-map-marker-alt"></i>  Cambridge, United Kingdom	</P> 
-							<p class = "smallParagraph" >  <i class="fas fa-phone-alt"></i>	 +44 77 29 00 34 95 </P> 
-							<p class = "smallParagraph" >  <i class="fas fa-at"></i>  agcambs@gmail.com </P> 
-							<p class = "smallParagraph" >  <i class="far fa-clock"></i> 	Mon - Sat 8:00 - 18:00 	</p>
-							
-					</div> 
-					
-				</div> 
-
-			</div> 
-
-			<div id="footbar" class = "w3-row w3-padding-small" >
-				<div class = "w3-col l6 " id="footbarCopyright" style = "text-align: left; color:  green!important; " > 	
-					<p> 	A-Gardens Cambridge &copy; 2024-25. All rights reserved	</p>
-				</div>
-				<div class = "w3-col l6 " style = "text-align: right; color:  green!important; "  id="footbarLinks">  	
-						<p class="footerLinks"   style = "text-align: right;" >
-							<a href="#index" class="link-1">Home</a>
-							<a href="aboutUs.html">About Us</a>					
-							<a href="services.html">Services</a>			
-							<a href="gallery.html">Gallery</a>					
-							<a href="contactUs.html">Contact Us</a>
-						</p>
-				</div>
-			 
-			</div>
-		  
-		</div>
+		<div includehtmlElements="footer.html">
+			<script>			includeHTML();		</script>
+		</div> 		
 
 	</body>
 </html> 

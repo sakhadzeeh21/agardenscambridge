@@ -15,8 +15,8 @@
 			.homeVideoIndex {     position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100vh;    object-fit: cover;    object-position: center;}
 				.menuBarDiv 	{	  height: 100vh; 	}	
 				header {  position: fixed;  width: 100%;  text-align: center;  color: white;  transition: .4s;}
-				header:hover {  background: rgba(255,255,255,0.8);  color:  inherit;}
-				.headerLinks { padding-top: 5px;  display: grid; grid-gap: 5px; grid-template-columns: 25% 50%  auto ;    } 
+				header:hover {   color:  inherit;}
+				.headerLinks {	z-index: 15; padding-top: 5px;  display: grid; grid-gap: 5px; grid-template-columns: 25% 50%  auto ;    } 
 					.headerLinksLogo		{ background: transparent; 	}
 					.headerLinksLogo img	{ width: 100px; }
 					.headerLinksLinks		{ background: transparent; 	}
@@ -33,7 +33,7 @@
 														border-color: transparent transparent black transparent; 		}
 						.SMtooltip:hover .tooltiptext {  	visibility: visible;   transition: 1s ease-in;   }
 						
-				.headerNav 	{	 margin-top: 40px;		}
+				.headerNav 	{	  margin-top: 40px;		}
 				.headerNav a {  text-decoration: none;  color: white;  padding: 1.3rem;  }
 				.headerNav a:hover {  background-color: black;		 color: white;  font-weight: bold;		}
 				.headerNav a.active {  color: green;  font-weight: bold; }
@@ -331,7 +331,7 @@
 
             	/*  WHY US */
 			#whyUsDiv						{ 	display: grid; display: grid; grid-gap: 5px; grid-template-columns: 65% auto ; width: 100%;} 
-			#whyUsCaptionDiv				{	HEIGHT: 100vh; margin-top: 90px;  background-image: url("downloads/sampleImageManWhiteBG.jpg"); background-repeat: no-repeat;  background-size: 99% 100%;				}
+			#whyUsCaptionDiv				{	HEIGHT: 100vh; margin-top: 90px;  background-image: url("downloads/sampleImageManWhiteBG1.png"); background-repeat: no-repeat;  background-size: 99% 100%;				}
 			#whyUsContentDiv				{	padding: 10px; background: transparent;						}
 				#whyUsContentDiv h2			{	text-align: left;		padding: 0px 10px; 	font-size: 3rem; color: #0b3d2c;		 		}
 				#whyUsContentDiv p			{	text-align: left; padding: 5px; text-indent: 20px ; 		}

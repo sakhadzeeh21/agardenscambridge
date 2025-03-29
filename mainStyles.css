@@ -25,7 +25,7 @@
 						.headerNav 	{	 margin-top: 40px;		}
 						.headerNav a {  text-decoration: none;  color: inherit;  padding: 1.3rem;  }
 						.headerNav a:hover {  background-color: black;		font-weight: bold;		}
-						.headerNav a.activeMenu { background-color: #eee;  color: green;  font-weight: bold; }
+						.headerNav a.activeMenu { color: green;  font-weight: bold; }
 
 					.menuBarContactDiv	{ background: transparent; 	  }
 						.socialMedia  {	margin-top: 10px; margin-left: 25px; text-align:center;  }		
@@ -149,8 +149,8 @@
             
             
             				/*			GALLERY 	#0b3d2e  */
-				#galleryDiv		{	  background: #0b3d2e;   color: red; display: grid;  grid-template-rows: 8% auto ;	 padding: 0px; 	}
-                #galleryHeader	{	 background: #0b3d2e; color: red;  		display: grid; 		 grid-template-columns: 25% auto ;	}
+				#galleryDiv		{	  background: #0b3d2e;   color: red; display: grid;  grid-template-rows: 10% auto ;	 padding: 5px; 	}
+                #galleryHeader	{	 background: #0b3d2e; color: red;  		display: grid; 	margin: 5px;  grid-template-columns: 25% auto ;	z-index: 2;}
                     #galleryImage	{  background: #0b3d2e; 	padding: 0px; margin: 1px auto; }
                         #galleryImage	img { width: 100%;   HEIGHT: AUTO; 		}
                     #galleryfilters	{  background: #0b3d2e; 	padding: 10px;  padding-top: 25px;  font-weight: bold;
@@ -160,7 +160,7 @@
                         .galleryFilterMenu:hover { background: #a7c847; } 
                         .activeGalleryFilter		{	background: #a7c847;  color: white; font-style: bold;  border-bottom: 5px solid #6eb506;	}	
                     
-                #galleryBody	{	color: red; 	padding: 0px;	margin: 0px auto; 	height: auto; 	}					
+                #galleryBody	{	color: red;  padding: 5px;	margin: 3px auto; margin-top: 10px;	height: auto; z-index: 1;	}					
                 
                 #galleryBodyContent {	background-color: #0b3d2e; 		color: white;	  font-weight: bold; 
                                         z-index: 2;	  	width: 100%;		  padding: 0px;		margin:14px 0px; 		text-align: center;

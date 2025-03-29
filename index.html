@@ -13,73 +13,20 @@
 		<script src="jquery-3.7.0.min.js"></script>		<!--			-->
 		<!--		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>	<!--	-->
 		
-		<script>	/*  accordion */
-			$(function() {		//BEGIN
-				$(".accordionTitle").on("click", function(e) {
-					e.preventDefault();
-					var $this = $(this);
-					if (!$this.hasClass("accordionActive")) {
-						$(".accordionContent").slideUp(400);
-						$(".accordionTitle").removeClass("accordionActive");
-						$('.accordionArrow').removeClass('accordionRotate');
-					}
+		<script src="faqAccordion.js">	/*  accordion */		</script>	
+		
+		<script src="includeHTML.js">		</script>
 
-					$this.toggleClass("accordionActive");
-					$this.next().slideToggle();
-					$('.accordionArrow',this).toggleClass('accordionRotate');
-				});		//END				
-			});		
-		
-		</script>
-			
-		<script> 		//Button ID:		all		gardenCare		fenceManagement		shadeCare			wasteDisposal
-		
-			$(document).ready(function(){  		
-				$("#gardenCare").click(function()		{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
-															$("#gardenCare").addClass("activeGalleryFilter");
-															$(".imageContainer").hide().fadeOut(50)	;			
-															$(".gardenCare").show().animate({scale: '0.0'}, "fast");			//	$(".gardenCare,  .fenceManagement, .shadeCare").hide().fadeOut(50);	;		
-															$(".gardenCare").animate({scale: '1'}, "medium");					//	$(".gardenCare").show().fadeIn(100);	;																
-														});										
-				$("#manageFence").click(function()		{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
-															$("#manageFence").addClass("activeGalleryFilter");
-															$(".imageContainer").hide().fadeOut(50)	;			
-															$(".manageFence").show().animate({scale: '0.0'}, "fast");		
-															$(".manageFence").animate({scale: '1'}, "medium");				
-														});										
-				$("#shadeCare").click(function()		{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
-															$("#shadeCare").addClass("activeGalleryFilter");
-															$(".imageContainer").hide().fadeOut(50)	;			
-															$(".shadeCare").show().animate({scale: '0.0'}, "fast");		
-															$(".shadeCare").animate({scale: '1'}, "medium");
-														});										
-				$("#wasteDisposal").click(function()	{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
-															$("#wasteDisposal").addClass("activeGalleryFilter");
-															$(".imageContainer").hide().fadeOut(50)	;			
-															$(".wasteDisposal").show().animate({scale: '0.0'}, "fast");		
-															$(".wasteDisposal").animate({scale: '1'}, "medium");
-														});										
-				$("#all").click(function()				{ 	$(".galleryFilterMenu").removeClass("activeGalleryFilter");
-															$("#all").addClass("activeGalleryFilter");
-															$(".imageContainer").hide().fadeOut(50)	;			
-															$(".imageContainer").show().animate({scale: '0.0'}, "fast");		
-															$(".imageContainer").animate({scale: '1'}, "medium");
-														});										
-					
-			}); 
-				
-				
-		</script> 
 	</head>
 	<body>
 		<div class="menuBarDiv">
-			<video poster="downloads/AGardensInvoiceLogoSmall.jpg" playsinline autoplay muted loop   class = "homeVideoIndex" >
+			<video poster="downloads/greenBG1.PNG" playsinline autoplay muted loop   class = "homeVideoIndex" >
 				<source src="videos/slabsVideo1.mp4" type="video/mp4">			
 			</video>
 			<header>
 				<div class = "headerLinks" > 
 					<div  class = "headerLinksLogo" >  
-						<img src="downloads/AGardensInvoiceLogoSmall.jpg" alt="Logo"/>
+						<img src="downloads/AGardensLogoWhite.png" alt="Logo"/>
 					</div> 
 					<div class = "headerLinksLinks" > 
 						<nav class = "headerNav" >
@@ -122,135 +69,14 @@
 		</div>
 		
 		<div class="pageContentDiv">						
-			<div id = "aboutUsDiv" > 
-				<div id = "aboutUsCaptionDiv" > 
-					<img  src="downloads/slabs.jpg" class="aboutUsCaption"  id = "aboutUsCaption1"  alt="Caption1"/>
-					<p  id = "aboutUsCaptionP"  class="aboutUsCaption"> <b> 10+ </b> Years <br/> of Experience <span>  </span> 	</P>
-					<img src="downloads/AfterAsroTurfInstalation.jpg" class="aboutUsCaption"  id = "aboutUsCaption2" alt="Caption2"/>	
-				</div>
-				<div id = "aboutUsContentDiv" >
-					<h2 id = "aboutUsHeaderSmall">		<img src="downloads/leaf1.png" alt="Leaf"/>	<span>  About Us	  </span>  	</h2> 
-					<H2 id = "aboutUsHeaderBig">  <b> Garden landscaping </b> Services for every need  							</h2>	
-					<p   id = "aboutUsParagraph"> We pledge to transform your landscaping dreams into reality, crafting beautiful, tranquil outdoor spaces that reflect your vision and 
-						enhance your lifestyle.  <br/>   Let us grow beauty and joy in every garden.
-						<ul> 
-							<li>	We Are Experienced at Gardening	and landscaping	</li>
-							<li>	We Adapt To Your Need 			</li>
-							<li>	We are fully Licensed and Insured  			</li>
-						</ul>
-					</p>
-					<div id = "aboutUsCEODiv" >		
-						<div id = "aboutUsCEO" >		 
-							<div id = "aboutUsCEOCaption" >	<img src="downloads/randyPPSmall.jpg" alt="Randy"/>	</div>
-							<div id = "aboutUsCEOName" >		
-										<h3> Randy Kalume 	</h3> 
-										<p> CEO and Founder </p> 
-							</div>
-						</div> 
-						<div id = "aboutUsGetInTouch" >	
-							<div class = 'aboutMeInforContentSM'> 
-								<p  style = " color: green ; font-size: 1.2rem;  padding: 2px; margin: 0px; text-align: center;  "   > <b> Get in Touch  </b> </p>
-										
-								<div class="socialMedia1">	
-									<div class="tooltip">	<img src="downloads/sm-tiktok-whiteBG.png"  alt="Tiktok"/>  <span class="tooltiptext">  Tik Tok </span>  </div>
-									<div class="tooltip">	<img src="downloads/sm-ig-original.jpg" alt="Instagram"/>   <span class="tooltiptext">  instagram </span>  </div>
-									<div class="tooltip">	<img src="downloads/sm-facebook.png"  alt="Facebook"/>   <span class="tooltiptext">  facebook </span>  </div>
-								</div>
-							</div>
-						</div> 
-					</div> 
-				</div>
-			</div>
-			<div id = "servicesDiv" > 
-				<div id = "servicesHeaderDiv" > 
-					<div id = "servicesHeader" >  
-						<h2 id = "servicesHeaderSmall">		<img src="downloads/leaf1.png" alt="Leaf"/>	<span>  Services	  </span>  	</h2> 
-						<H2 id = "servicesHeaderBig">  <b> Garden landscaping </b> Services for every need  							</h2>
-					</div> 
-					<div id = "servicesParagraph" >   
-						<p>		Enhance your outdoor space with our professional garden landscaping services, 
-								customized to suit every need and preference. From design to installation,
-								we create beautiful, functional gardens that reflect your style.	
-						</p> 				
-					</div> 
-				</div>
-				<div id = "servicesContentDiv" > <!--	Garden Management, Fence Management, Waste Disposal, Shade Management	-->
-					<div class = "servicesContent" id = "gardenCare"> 	 	
-						<img src="downloads/flower.jpg" alt=Flower""/>	
-						<h2 class = "servicesContentHeading"> Garden Care  </h2> 					
-						<div class = "servicesContentBody" > We offer exquisite and quality gardening services including: 
-							plant maintenance, ground management, prunning, weeding, pest & fungi control, clearing debris or leaves, 
-							to ensure that the garden is beautiful and also to prevent serious problems from developing.
-							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
-						</div>
-					</div> 
-					<div class = "servicesContent" id = "fenceManagement"> 		
-						<img src="downloads/HotelCarPark1.jpg" alt="Fence"/>	
-						<h2 class = "servicesContentHeading"> Fence Management  </h2> 					
-						<div class = "servicesContentBody" > We design, install and manage a wide variety of functional, durable and 
-							stylish fence including: chain-link, picket fence, fence panels, fence posts and rail.
-							we also install, irrigate, trim and manage live fences whether it be of climbing plants, evergreens, 
-							shrubs, hedges or other tree variety.	
-							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
-						</div>
-					</div> 
-					<div class = "servicesContent" id = "shadeManagement"> 	
-						<img src="downloads/shadeInstall1.jpg" alt="Shade"/>	
-						<h2 class = "servicesContentHeading"> Shade Management  </h2> 					
-						<div class = "servicesContentBody" >	We design and build shade to suite the clients needs. 
-							We can also remove and dispose worn-out, delapidated or unused shades.
-							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
-						</div>
-					</div> 
-					<div class = "servicesContent" id = "landscapping"> 	
-						<img src="downloads/slabs3.jpg" alt="Landscaping"/>	
-						<h2 class = "servicesContentHeading"> Landscapping  </h2> 					
-						<div class = "servicesContentBody" >	Our landscaping involves designing and arranging the outdoor areas of a property or building
-							including plants [trees or flowers] selection, yard maintenance and upkeep, 
-							installation of water features and stone or other hardscaping elements like walkways, patios, retaining walls. 	
-							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>
-						
-						</div>
-					</div>
-					<div class = "servicesContent" id = "parkCare"> 	 	
-						<img src="downloads/AfterAsroTurfInstalation.jpg" alt="Turf"/>	
-						<h2 class = "servicesContentHeading"> Turf Installation  </h2> 					
-						<div class = "servicesContentBody" > We experts in installation of all forms of turf grass including natural or artificial.
-							 we are also experts in installation and management of astro-turf, the leading synthetic turf in the world
-							 that is not only aesthetically appealing, but it is designed to withstand the demands of the client. 
-							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
-						</div>
-					</div> 
-					<div class = "servicesContent" id = "snowServices"> 
-						<img src="downloads/HotelCarParkjpg.jpg" alt ="SnowIce" />	
-						<h2 class = "servicesContentHeading"> Snow & Ice Services    </h2> 					
-						<div class = "servicesContentBody" > We offer a variety of snow and ice services ranging from: 
-							snow clearing, snow plowing, to ice melting, salting, sanding and removal or hauling of snow.
-							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
-						</div>
-					</div> 						
-					<div class = "servicesContent" id = "wasteDisposal"> 
-						<img src="downloads/shadeInstall.jpg"  alt="Shade"/>	
-						<h2 class = "servicesContentHeading"> Waste Disposal   </h2> 					
-						<div class = "servicesContentBody" > We are a licensed and register solid waste manager and transported, 
-							with the capacity to handling and disposal trash and other  solid waste.
-							we are able to design and effect waste disposal	methods thereby reducing its environmental impact in a bid to address 
-							pollution, contamination, 		and environmental regulations 							
-							<!--	Specializing in a specific area of waste management, such as wastewater treatment or toxic material disposal -->
-							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
-						</div>
-					</div> 
-					<div class = "servicesContent" id = "otherServices"> 
-						<img src="downloads/AsroTurfGrass.jpg"  alt="Other Services"/>	
-						<h2 class = "servicesContentHeading"> Other Services    </h2> 					
-						<div class = "servicesContentBody" > We also offer other services including: management of drainage systems, small-scale 
-							excavations, exceptional cleaning services specializing in removal for man-in-a-van, homes, offices, student belongings,
-							furniture,	and garden rubbish.
-							<button class="contactUsbutton"> <a href = "contactUs.html">  Get In Touch </a> 				</button>						
-						</div>
-					</div> 						
-				</div>
-			</div> 		
+			<div includeaboutUsDivElements="aboutUsDiv.html">
+				<script>				includeAboutUsDiv();		</script>
+			</div> 
+
+			<div includeaboutOurServicesDivElements="aboutOurServicesDiv.html">
+				<script>				includeOurServicesDiv();		</script>
+			</div> 
+			
 			<div id = "gardenningProcessDiv"> 
 				<div id = "gardenningProcessHeaderDiv"> 			  
 					<div id = "gardenningProcessHeader"> 				
@@ -284,73 +110,11 @@
 					</div> 
 				</div> 			
 			</div> 
-			<div id="whyUsDiv">
-					<div id="whyUsContentDiv">
-						<h2> <b> Why choose us  </b> for your landscapping services?  </h2> 
-						<p> Choose us for expert landscaping, personalized designs, quality craftsmanship, and dedicated service
-							to make your outdoor space exceptional. 
-							For massive or small garden features, we have Garden specialists who can help you along the way.  
-						</p>
-						<div id="whyUsContentChoicesDiv">
-							<div class="whyUsContentChoice">
-								<h3 class="whyUsContentChoiceH"> 
-									<img src="downloads/experience.png" alt="Experience"/>	
-									10+ Years of  Experience  
-								</h3> 
-								<p>  We have a range of gardenning specialists with years of expertise in crafting beautiful gardens
-									to ensure we design the right solution for you.									
-								</p> 
-							</div>
-							<div class="whyUsContentChoice">
-								<h3	 class="whyUsContentChoiceH"> 
-									<img src="downloads/services.png" alt="Services"/>										
-									Wide Range of Services  <!--Garden  Expertise Specialists  --> 	
-								</h3> 
-								<p>  We cut grass, rotovate gardens, plant flower, lay turf, 
-									 water plants, installat or repair fences, construct sheds, and remove  patio or concrete
-								</p> 
-							</div>
-							<div class="whyUsContentChoice">
-								<h3 class="whyUsContentChoiceH"> <img src="downloads/craftsmanship.png" alt="Craftsmanship" />	
-									Quality Craftsmanship  
-								</h3> 
-								<p>  Top-notch craftsmanship with premium materials and attention to detail offering 
-									 our clients top notch gardenning services. 	
-								</p> 
-							</div>
-							<div class="whyUsContentChoice">
-								<h3 class="whyUsContentChoiceH"> <img src="downloads/integrity.png" alt="Inegeiry"/>									
-									Honest and Dependable  								
-								</h3> 
-								<p>  Honesty is the only policy as we strive to complete all projects with utmost integrity, not just with our clients, 
-									but to ensure each project .								
-								</p> 
-							</div>
-							<div class="whyUsContentChoice">
-								<h3 class="whyUsContentChoiceH"> <img src="downloads/gardenning.png" alt="Gardening"/>	
-									1000+ Successful Projects  
-								</h3> 
-								<p>  We have sucessfully completed thousands of projects,
-									transforming outdoor spaces into exquisite paradises for our clients making us the most trusted 
-									Garden Maintenance company in UK 
-								</p> 
-							</div>
-							<div class="whyUsContentChoice">
-								<h3 class="whyUsContentChoiceH"> <img src="downloads/licensed2.png" alt="Licensed"/>	
-									Licensed and Insured  
-								</h3> 
-								<p> 
-									Our Garden specialists who can help you along the way. 
-									Whether a massive or  small garden feature, we can design the right solution for you.  
-										</br>
-									 <b> Registered waste carrier: No.CBDL258422  </b>
-									
-								</p> 
-							</div>
-						</div>
-					</div>
-					<div id="whyUsCaptionDiv">	</div>
-			</div>
+			
+			<div includeWhyUsElements="aboutWhyUsDiv.html">
+				<script>				includeWhyUsDiv();		</script>
+			</div> 
+
 			<div id="FAQSDiv"> 
 				<div id="FAQSContentDiv"> 
 					<h2> <b> Our Frequently   </b> Asked Questions?  </h2> 
@@ -406,6 +170,7 @@
 					</div>
 				</div>
 			</div>
+			
 			<div id="testimonialContainer">
 				<h2>Client Testimonials</h2>
 				<div class="mySlides fade">
@@ -437,6 +202,7 @@
 					<span class="dot"></span> 
 				</div>
 			</div>			
+			
 			<div id="awardBannerDiv">	<!--			ABOUT US  <!--	[SERVICES, MEMBERS, AWARDS, PHOTO ]		-->
 				<div class = "awardBanner" id="awardBannerServicesDiv">						
 					<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
@@ -473,91 +239,15 @@
 				</div> 
 				<div class = "awardBanner" id="awardBannerPhotoDiv">	<img src="downloads/turf.jpg" alt="Turf"/>			</div> 		
 			</div>
+			
 		</div>
-		<div class="footerDiv">  
-			<div class = "footer w3-padding-top-16 w3-white"> 	<!--	<div> Subscribe			</div> 			-->
-				<div class = "w3-row" id=""> 
-					<div class = "w3-col w3-container  l4  "> 		
-							<h3  class = "footerMenu"> 	About		</h3>		<!-- WRAP TEXT AROUND LOGO 		-->
-							<div class = " " id = "aboutContent" > <!--	  style = " display: grid; grid-gap: 5px; grid-template-columns: 30% auto ;  " >		-->
-									<img src="downloads/AGardensInvoiceLogoSmall.jpg" class=" w3-margin-right" style=" width: 45%; " alt="Logo"/>
-									<p style = "font-size: 16px; text-indent: 20px; color: green!important;" >  A-Garden Cambridge offers premium services
-									  ranging from the design and installation of many landscape construction projects including walkways, steps, 
-									  patios, planting, trans-planting, drainage systems, lawn renovation and installation,
-									  paver driveways, and excavation.</p> 
-									<p  style = "font-size: 16px; text-indent: 20px; padding: 10px; " >  
-										<!--	<i class="fa-brands fa-tiktok"  aria-hidden="true"></i>		-->
-										<i class="fa fa-tiktok" aria-hidden="true"></i>					
-										<i class="fa fa-instagram" aria-hidden="true"></i>					
-										<i class="fa fa-facebook" aria-hidden="true"></i>															
-										<!--	<i class="fa fa-whatsapp" aria-hidden="true"></i>		-->
-										<!--	<i class="fa fa-linkedin" aria-hidden="true"></i>		-->
-									</p>
-							</div> 					
-					</div> 
-					<div class = "w3-col w3-container  l2 "> 		
-							<h3  class = "footerMenu" > 	Explore			</h3>
-							<p class = "midParagraph"  style = "margin-top: 40px; " > <a href="" class="link-1">Home</a>			  </p>
-							<p class = "midParagraph"> 			<a href="aboutUs.html">About Us</a> 			</p>
-							<p class = "midParagraph"> 			<a href="services.html">Services</a>			 </p>
-							<p class = "midParagraph"> 			<a href="gallery.html">Gallery</a>				 </p>
-							<p class = "midParagraph"> 			<a href="contactUs.html">Contact Us</a>			 </p>	
-					</div> 
-					<div class = "w3-col w3-container  l3 "> 		
-							<h3 class = "footerMenu  "> 		Services	</h3> 
-								<nav class = "ServicesNav" >
-									<a href="#">	Gardens maintenance		</a>   
-									<a href="#">	House & Office Cleaning	</a>
-									<a href="#">	Fence Installation & Repairs 	</a>
-									<a href="#">	Rubbish Clearance, Waste Disposal	</a>
-									<a href="#">	Shade Installation & Disposal 	</a>
-									<a href="#">	Van Removals	</a>
-								</nav>
-					</div> 
-					<div class = "w3-col w3-container  l3 w3-transparent "> 		
-							<h3 class = "footerMenu" > 		Get in Touch		</h3>
-							<p class = "smallParagraph"  style = "margin-top: 40px; " >  <i class="fas fa-map-marker-alt"></i>  Cambridge, United Kingdom	</P> 
-							<p class = "smallParagraph" >  <i class="fas fa-phone-alt"></i>	 +44 77 29 00 34 95 </P> 
-							<p class = "smallParagraph" >  <i class="fas fa-at"></i>  agcambs@gmail.com </P> 
-							<p class = "smallParagraph" >  <i class="far fa-clock"></i> 	Mon - Sat 8:00 - 18:00 	</p>
-					</div> 					
-				</div> 
-			</div> 
-			<div id="footbar" class = "w3-row w3-padding-small" >
-				<div class = "w3-col l6 " id="footbarCopyright" style = "text-align: left; color:  green!important; " > 	
-					<p> 	A-Gardens Cambridge &copy; 2024-25. All rights reserved	</p>
-				</div>
-				<div class = "w3-col l6 " style = "text-align: right; color:  green!important; "  id="footbarLinks">  	
-						<p class="footerLinks"   style = "text-align: right;" >
-							<a href="#index" class="link-1">Home</a>
-							<a href="aboutUs.html">About Us</a>					
-							<a href="services.html">Services</a>			
-							<a href="gallery.html">Gallery</a>					
-							<a href="contactUs.html">Contact Us</a>
-						</p>
-				</div>
-			</div>		  
-		</div>
-		<script>		//	Testimonial slide script
-			let slideIndex = 0;
-			showSlides();
+		
+		<div includehtmlElements="footer.html">
+			<script>			includeHTML();		</script>
+		</div> 
 
-			function showSlides() {
-				let i;
-				let slides = document.getElementsByClassName("mySlides");
-				let dots = document.getElementsByClassName("dot");
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";  
-				}
-				slideIndex++;
-				if (slideIndex > slides.length) {slideIndex = 1}    
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" activeDot", "");
-				}
-				slides[slideIndex-1].style.display = "block";  
-				dots[slideIndex-1].className += " activeDot";
-				setTimeout(showSlides, 4000); // Change image every 2 seconds
-			}
-		</script>
+		<script src="slides.js">	/*  testimonials */		</script>	
+		
+
 	</body>
 </html> 
